@@ -10,7 +10,7 @@ class ChessGame:
         self.black = cg.headers.get("Black")
         self.result =cg.headers.get('Result')
 
-    def get_cwinner(self): # color winner
+    def get_color_winner(self): # color winner
         if self.result == '1-0':
             return 'white'
         elif self.result == '0-1':
@@ -27,3 +27,13 @@ class ChessGame:
             return self.black
         else:
             return winner
+
+    def is_white(self, user):
+        if user == self.white:
+            return True
+        elif user == self.black:
+            return False
+        else:
+            return None
+        
+    
