@@ -36,14 +36,19 @@ def get_first_moves():
     return first_moves
 
 def get_first_moves_user(usr):
-    first_moves = {}
+    first_moves = [{},{}]
     for cg in chess_games:
         first_move = cg.get_first_move_user(usr, 1)
-        usr_color = cg.get_color(usr)
-        if (first_move, usr_color) in first_moves.keys():
-            first_moves.update({(first_move, usr_color): first_moves.get((first_move, usr_color)) + 1})
+        if cg.is_white(usr):
+            if first_move in first_moves[0].keys():
+                first_moves[0].update({first_move: first_moves[0].get(first_move) + 1})
+            else:
+                first_moves[0].update({first_move: 1})
         else:
-            first_moves.update({(first_move, usr_color): 1})
+            if first_move in first_moves[1].keys():
+                first_moves[1].update({first_move: first_moves[1].get(first_move) + 1})
+            else:
+                first_moves[1].update({first_move: 1})
     return first_moves
 
 def get_first_moves_matrix():
@@ -66,9 +71,9 @@ def get_first_moves_user_matrix(usr):
         first_moves[f][c] += 1
     return first_moves
 
-move_matrix = get_first_moves_user_matrix(user)
+""" move_matrix = get_first_moves_user_matrix(user)
 
 for f in range(len(move_matrix)):
-    print(move_matrix[-(f+1)])
+    print(move_matrix[-(f+1)]) """
 
-#print(get_first_moves_user(user))
+print(get_first_moves_user(user))
