@@ -36,6 +36,12 @@ class ChessGame:
         else:
             raise Exception("The user given did not play this game")
 
+    def get_color(self, user):
+        if self.is_white(user):
+            return "white"
+        else:
+            return "black"
+
     def get_first_move(self):
         moves = iter(self.game.mainline_moves())
         first_move = next(moves)
