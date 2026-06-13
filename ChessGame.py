@@ -42,12 +42,15 @@ class ChessGame:
         else:
             return "black"
 
-    def get_first_move(self):
+    def get_first_move(self, notation):
         moves = iter(self.game.mainline_moves())
         first_move = next(moves)
-        return first_move
+        if notation == 1:
+            return self.board.san(first_move)
+        else:
+            return first_move
 
-    def get_first_move_user(self, user):
+    def get_first_move_user(self, user, notation):
         moves = iter(self.game.mainline_moves())
         white_move = next(moves)
         if self.is_white(user):
@@ -55,12 +58,8 @@ class ChessGame:
         else:
             self.board.push(white_move)
             first_move = next(moves)
-        return first_move
-    
-    def get_first_move_san(self):
-        move = self.get_first_move()
-        return self.board.san(move)
-    
-    def get_first_move_user_san(self, user):
-        move = self.get_first_move_user(user)
-        return self.board.san(move)
+
+        if notation == 1:
+            return self.board.san(first_move)
+        else:
+            return first_move
