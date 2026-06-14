@@ -6,7 +6,6 @@ class Player:
     def __init__(self, usr, pgn):
         self.username = usr
         self.games = self.filter_games(pgn)
-        self.board = chess.Board()
         self.GAME_NUM = len(self.games)
 
     def filter_games(self, pgn):
@@ -32,6 +31,37 @@ class Player:
                 print(self.username + " lost.\n")
 
         return f"{self.username} won {wins} games out of {self.GAME_NUM}, making a win % of: {(wins / self.GAME_NUM) * 100} %"
+
+    def get_first_move(self, game, notation):
+        board = game.get_board()
+        moves = game.get_moves()
+        white_move = next(moves)
+        if game.is_white(self.username):
+            first_move = white_move
+        else:
+            board.push(white_move)
+            first_move = next(moves)
+        if notation == 1:
+            return board.san(first_move)
+        else:
+            return first_move
+
+    def get_first_moves(self):
+        first_moves = [{},{}]
+        for game in self.games:
+            first_move = self.get_first_move(game, notation=1)
+            if game.is_white(self.username):
+                if first_move in first_moves[0].keys():
+                   first_moves[0].update({first_move: first_moves[0].get(first_move) + 1})
+                else:
+                    first_moves[0].update({first_move: 1})
+            else:
+                if first_move in first_moves[1].keys():
+                    first_moves[1].update({first_move: first_moves[1].get(first_move) + 1})
+                else:
+                    first_moves[1].update({first_move: 1})
+        return first_moves
+
 
     def won(self, game):
         if game.get_winner() == self.username:

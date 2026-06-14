@@ -2,13 +2,14 @@ import chess
 import chess.pgn
 
 class ChessGame:
-    def __init__(self, cg):
-        self.game = cg
-        self.hd = cg.headers
-        self.board = cg.board()
-        self.white = cg.headers.get("White")
-        self.black = cg.headers.get("Black")
-        self.result =cg.headers.get('Result')
+    def __init__(self, game):
+        self.game = game
+        self.hd = game.headers
+        self.board = game.board()
+        self.white = game.headers.get("White")
+        self.black = game.headers.get("Black")
+        self.result = game.headers.get('Result')
+        self.moves = iter(game.mainline_moves())
 
     def get_color_winner(self): # color winner
         if self.result == '1-0':
@@ -49,24 +50,16 @@ class ChessGame:
             return self.board.san(first_move)
         else:
             return first_move
-
-    def get_first_move_user(self, user, notation):
-        moves = iter(self.game.mainline_moves())
-        white_move = next(moves)
-        if self.is_white(user):
-            first_move = white_move
-        else:
-            self.board.push(white_move)
-            first_move = next(moves)
-
-        if notation == 1:
-            return self.board.san(first_move)
-        else:
-            return first_move
         
+    def get_game(self):
+        return self.game
     def get_white(self):
         return self.white
     def get_black(self):
         return self.black
     def get_result(self):
         return self.result
+    def get_board(self):
+        return self.board
+    def get_moves(self):
+        return self.moves

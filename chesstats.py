@@ -10,27 +10,11 @@ user = "TensiKReyDama"
 """ def get_first_moves():
     first_moves = {}
     for cg in chess_games:
-        first_move = cg.get_first_move(1)
+        first_move = cg.get_first_move(notation=1)
         if first_move in first_moves.keys():
             first_moves.update({first_move: first_moves.get(first_move) + 1})
         else:
             first_moves.update({first_move: 1})
-    return first_moves
-
-def get_first_moves_user(usr):
-    first_moves = [{},{}]
-    for cg in chess_games:
-        first_move = cg.get_first_move_user(usr, 1)
-        if cg.is_white(usr):
-            if first_move in first_moves[0].keys():
-                first_moves[0].update({first_move: first_moves[0].get(first_move) + 1})
-            else:
-                first_moves[0].update({first_move: 1})
-        else:
-            if first_move in first_moves[1].keys():
-                first_moves[1].update({first_move: first_moves[1].get(first_move) + 1})
-            else:
-                first_moves[1].update({first_move: 1})
     return first_moves
 
 def get_first_moves_matrix():
@@ -59,4 +43,4 @@ for f in range(len(move_matrix)):
     print(move_matrix[-(f+1)]) """
 
 player = Player(user, pgn)
-print(player.get_winning_rate())
+print(player.get_first_moves())
