@@ -44,7 +44,8 @@ class ChessGame:
             return "black"
 
     def get_first_move(self, notation):
-        moves = iter(self.game.mainline_moves())
+        moves = iter(self.moves)
+        self.board.reset()
         first_move = next(moves)
         if notation == 1:
             return self.board.san(first_move)

@@ -10,12 +10,14 @@ class Player:
 
     def filter_games(self, pgn):
         chess_games = []
+        pgn.seek(0)
         file_game = chess.pgn.read_game(pgn) 
         while file_game is not None:
             game = ChessGame(file_game)
             if(game.get_white() == self.username or game.get_black() == self.username):
                 chess_games.append(game)
             file_game = chess.pgn.read_game(pgn) 
+        pgn.seek(0)
         return chess_games
     
     def get_winning_rate(self):
