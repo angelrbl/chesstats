@@ -20,7 +20,7 @@ class ChessGame:
         return None
     
     def get_winner(self):  # user winner
-        winner = self.get_cwinner()
+        winner = self.get_color_winner()
         if winner == "white":
             return self.white
         elif winner == "black":
@@ -63,3 +63,10 @@ class ChessGame:
             return self.board.san(first_move)
         else:
             return first_move
+        
+    def get_white(self):
+        return self.white
+    def get_black(self):
+        return self.black
+    def get_result(self):
+        return self.result
