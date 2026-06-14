@@ -9,7 +9,7 @@ class ChessGame:
         self.white = game.headers.get("White")
         self.black = game.headers.get("Black")
         self.result = game.headers.get('Result')
-        self.moves = iter(game.mainline_moves())
+        self.moves = game.mainline_moves()
 
     def get_color_winner(self): # color winner
         if self.result == '1-0':
