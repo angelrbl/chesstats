@@ -62,4 +62,4 @@ def main():
     print(games_first_moves)
 
 chess_games = build_games_list(pgn_file)
-print(chess_games[0].took("f4"))
+print(chess_games[0].get_first_taken())

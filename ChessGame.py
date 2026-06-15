@@ -52,8 +52,22 @@ class ChessGame:
         else:
             return first_move
 
-    def took(self, move):
+    def is_piece_taken(self, move):
+        move = self.board.san(move)
         return move[1] == 'x'
+    
+    def get_first_taken(self):
+        i = 0
+        j = 0
+        self.board.reset()
+        for move in self.moves:
+            if self.is_piece_taken(move):
+                return (self.board.san(move), j, i)
+            self.board.push(move)
+            i += 1
+            if i % 2 == 0:
+                j += 1
+
 
     def get_game(self):
         return self.game
