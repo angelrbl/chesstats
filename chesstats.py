@@ -8,12 +8,13 @@ user = "TensiKReyDama"
 
 
 def build_games_list(pgn):
+    pgn.seek(0)
     games = []
     file_game = chess.pgn.read_game(pgn) 
-    print(file_game, games, "aaa")
     while file_game is not None:
         games.append(ChessGame(file_game))
         file_game = chess.pgn.read_game(pgn) 
+    pgn.seek(0)
     return games
 
 def get_first_moves(games):
@@ -36,25 +37,29 @@ def get_first_moves_matrix(games):
         first_moves[f][c] += 1
     return first_moves
 
-player = Player(user, pgn_file)
+def main():
+    player = Player(user, pgn_file)
+    chess_games = build_games_list(pgn_file)
+
+    #PLAYER
+
+    player_move_matrix = player.get_first_moves_matrix()
+
+    for f in range(len(player_move_matrix)):
+        print(player_move_matrix[-(f+1)]) 
+        
+    player_first_moves = player.get_first_moves()
+    print(player_first_moves)
+
+    #GAMES
+
+    games_move_matrix = get_first_moves_matrix(chess_games)
+
+    for f in range(len(games_move_matrix)):
+        print(games_move_matrix[-(f+1)])
+
+    games_first_moves = get_first_moves(chess_games)
+    print(games_first_moves)
+
 chess_games = build_games_list(pgn_file)
-
-#PLAYER
-
-player_move_matrix = player.get_first_moves_matrix()
-
-for f in range(len(player_move_matrix)):
-    print(player_move_matrix[-(f+1)]) 
-    
-player_first_moves = player.get_first_moves()
-print(player_first_moves)
-
-#GAMES
-
-games_move_matrix = get_first_moves_matrix(chess_games)
-
-for f in range(len(games_move_matrix)):
-    print(games_move_matrix[-(f+1)])
-
-games_first_moves = get_first_moves(chess_games)
-print(games_first_moves)
+print(chess_games[0].took("f4"))

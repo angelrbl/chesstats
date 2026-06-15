@@ -51,7 +51,10 @@ class ChessGame:
             return self.board.san(first_move)
         else:
             return first_move
-        
+
+    def took(self, move):
+        return move[1] == 'x'
+
     def get_game(self):
         return self.game
     def get_white(self):
