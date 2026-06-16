@@ -67,15 +67,21 @@ class ChessGame:
 
     def set_move(self, move_index):
         self.board.reset()
+        moves = iter(self.moves)
+        move = next(moves)
         if move_index >= self.MOVE_COUNT:
             raise IndexError("The index of the move given is higher than the number of moves of the game.")
         for i in range(move_index):
-            self.board.push(self.moves[i])
-        return True
+            self.board.push(move)
+            move = next(moves)
+        return move
         
-    def find_move(self, move_index):
-        self.set_move(move_index)
-        return self.moves[move_index]
+    def find_move(self, move_index, notation):
+        move = self.set_move(move_index)
+        if notation == 1:
+            return self.board.san(move)
+        else:
+            return move
         
 
     def get_game(self):

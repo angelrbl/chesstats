@@ -60,6 +60,11 @@ def main():
 
     games_first_moves = get_first_moves(chess_games)
     print(games_first_moves)
+ 
+    player = Player(user, pgn_file)
+    print(player.get_first_capture(0))
 
-chess_games = build_games_list(pgn_file)
-print(chess_games[0].get_first_capture())
+    chess_games = build_games_list(pgn_file)
+    print(chess_games[0].get_first_capture())
+
+    print(player.took(player.get_games()[0], 17))

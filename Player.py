@@ -39,7 +39,7 @@ class Player:
         board.reset()
         moves = iter(game.get_moves())
         white_move = next(moves)
-        if game.is_white(self.username):
+        if self.is_white(game):
             first_move = white_move
         else:
             board.push(white_move)
@@ -53,7 +53,7 @@ class Player:
         first_moves = [{},{}]
         for game in self.games:
             first_move = self.get_first_move(game, notation=1)
-            if game.is_white(self.username):
+            if self.is_white(game):
                 if first_move in first_moves[0].keys():
                    first_moves[0][first_move] = first_moves[0].get(first_move, 0) + 1
                 else:
@@ -76,8 +76,21 @@ class Player:
         return first_moves 
 
     def took(self, game, move_index):
-        move = game.find_move(move_index)
-        if game.get_board().turn == game.is_white() and game.is_a_capture(move):
+        move = game.find_move(move_index, notation=0)
+        if game.get_board().turn == self.is_white(game) and game.is_a_capture(move):
+            return True
+        else:
+            return False
+        
+    def get_first_capture(self, game_index):
+        game = self.games[game_index]
+        for i in range(game.MOVE_COUNT):
+            if self.took(game, i):
+                return (game.find_move(i, notation=1), i//2 ,i)
+        return False
+
+    def is_white(self, game):
+        if game.is_white(self.username):
             return True
         else:
             return False
@@ -98,4 +111,7 @@ class Player:
         else:
             return True
     
-    
+    def get_games(self):
+        return self.games
+    def get_username(self):
+        return self.username
