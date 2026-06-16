@@ -10,6 +10,7 @@ class ChessGame:
         self.black = game.headers.get("Black")
         self.result = game.headers.get('Result')
         self.moves = game.mainline_moves()
+        self.MOVE_COUNT = len(list(game.mainline_moves()))
 
     def get_color_winner(self): # color winner
         if self.result == '1-0':
@@ -52,22 +53,30 @@ class ChessGame:
         else:
             return first_move
 
-    def is_piece_taken(self, move):
-        move = self.board.san(move)
-        return move[1] == 'x'
+    def is_a_capture(self, move):
+        return self.board.is_capture(move)
     
-    def get_first_taken(self):
+    def get_first_capture(self):
         i = 0
-        j = 0
         self.board.reset()
         for move in self.moves:
-            if self.is_piece_taken(move):
-                return (self.board.san(move), j, i)
+            if self.is_a_capture(move):
+                return (self.board.san(move), i // 2, i)
             self.board.push(move)
             i += 1
-            if i % 2 == 0:
-                j += 1
 
+    def set_move(self, move_index):
+        self.board.reset()
+        if move_index >= self.MOVE_COUNT:
+            raise IndexError("The index of the move given is higher than the number of moves of the game.")
+        for i in range(move_index):
+            self.board.push(self.moves[i])
+        return True
+        
+    def find_move(self, move_index):
+        self.set_move(move_index)
+        return self.moves[move_index]
+        
 
     def get_game(self):
         return self.game

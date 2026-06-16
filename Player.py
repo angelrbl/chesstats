@@ -75,6 +75,13 @@ class Player:
             first_moves[f][c] += 1
         return first_moves 
 
+    def took(self, game, move_index):
+        move = game.find_move(move_index)
+        if game.get_board().turn == game.is_white() and game.is_a_capture(move):
+            return True
+        else:
+            return False
+
     def won(self, game):
         if game.get_winner() == self.username:
             return True
