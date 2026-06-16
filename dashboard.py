@@ -1,5 +1,4 @@
 import streamlit as st
-import heatmap
 import chesstats as cs
 from Player import Player
 
