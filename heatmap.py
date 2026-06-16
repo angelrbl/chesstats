@@ -2,8 +2,6 @@ import matplotlib.pyplot as plt
 import numpy as np
 import seaborn as sns
 import chesstats as cs
-import chess
-import chess.pgn
 from ChessGame import ChessGame
 from Player import Player
 
@@ -19,7 +17,10 @@ matriz_np = np.flipud(matriz_np)
 cols = ["a", "b", "c", "d", "e", "f", "g", "h"]
 files = ["1", "2", "3", "4", "5", "6", "7", "8"]
 
-plt.figure(figsize=(7, 7))
-sns.heatmap(matriz_np, annot=True, fmt="d", cmap="YlOrRd", square=True, cbar=False, xticklabels=cols, yticklabels=files)
+fig, ax = plt.subplots(figsize=(7, 7))
+sns.heatmap(matriz_np, annot=True, fmt="d", cmap="YlOrRd", square=True, cbar=False, xticklabels=cols, yticklabels=files, ax=ax)
+fig.patch.set_alpha(0.0)
+ax.tick_params(colors='white')
 
-plt.show()
+if __name__ == "__main__":
+    plt.show()
