@@ -92,6 +92,13 @@ class Player:
             if self.won(game):
                 wins += 1
         return wins
+    
+    def get_draw_count(self):
+        draws = 0
+        for game in self.games:
+            if self.drew(game):
+                draws += 1 
+        return draws
 
 
     def won(self, game):
