@@ -2,9 +2,10 @@ import matplotlib.pyplot as plt
 import numpy as np
 import seaborn as sns
 from Player import Player
+import chesstats as cs
 
-def heatmap(player):
-    matriz_np = np.array(player.get_first_moves_matrix())
+def first_moves_heatmap(player, selection):
+    matriz_np = np.array(player.get_first_moves_matrix() if selection is "Player" else cs.get_first_moves_matrix(cs.games))
     matriz_np = np.flipud(matriz_np)
 
     cols = ["a", "b", "c", "d", "e", "f", "g", "h"]
@@ -45,7 +46,46 @@ def results_graph(player, color):
     sns.despine(left=True, bottom=True)
     ax.tick_params(colors='white', labelsize=12)
     ax.set_xlabel('', color='white')
-    ax.set_ylabel('Game Number', color='white', fontsize=12)
+    ax.set_ylabel('Num of games', color='white', fontsize=12)
+    fig.patch.set_alpha(0.0)
+    return fig
+
+def first_move_graph(player, selection):
+    if selection == "Player":
+        first_move_dict = player.get_first_moves()
+        if not first_move_dict:
+            raise Exception("Not enough data to show")
+        first_move_white_data = {
+            "Move": list(first_move_dict[0].keys()),
+            "Times": list(first_move_dict[0].values())
+        }
+        first_move_black_data = {
+            "Move": list(first_move_dict[1].keys()),
+            "Times": list(first_move_dict[1].values())
+        }
+        games_num = len(list(first_move_dict[0].keys()))
+    else:
+        first_move_dict = cs.get_first_moves(cs.games)
+        if not first_move_dict:
+            raise Exception("Not enough data to show")
+        first_move_white_data = {
+            "Move": list(first_move_dict.keys()),
+            "Times": list(first_move_dict.values())
+        }
+        games_num = len(first_move_dict.keys())
+
+    height = max(3, games_num * 0.5) 
+
+    fig, ax = plt.subplots(figsize=(8, height))
+    sns.barplot(x='Times', y='Move', data=first_move_white_data, color="#ebebeb", ax=ax)
+    if selection == "Player":
+        sns.barplot(x='Times', y='Move', data=first_move_black_data, color="#373737", ax=ax)
+        ax.bar_label(ax.containers[1], padding=8, color='white', fontweight='bold', fontsize=11)
+    ax.tick_params(colors='white', labelsize=12)
+    ax.bar_label(ax.containers[0], padding=8, color='white', fontweight='bold', fontsize=11)
+    ax.set_ylabel('', color='white')
+    ax.get_xaxis().set_visible(False)
+    sns.despine(left=True, bottom=True)
     fig.patch.set_alpha(0.0)
     return fig
 
@@ -55,5 +95,5 @@ if __name__ == "__main__":
     user = "TensiKReyDama"
 
     usr = Player(user, pgn_file)
-    heatmap(usr)
+    first_move_graph(usr, selection="General")
     plt.show()

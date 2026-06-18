@@ -3,10 +3,6 @@ import chess.pgn
 from ChessGame import ChessGame
 from Player import Player
 
-pgn_file = open("chess_games.pgn", encoding="utf-8")
-user = "TensiKReyDama"
-
-
 def build_games_list(pgn):
     pgn.seek(0)
     games = []
@@ -37,7 +33,12 @@ def get_first_moves_matrix(games):
         first_moves[f][c] += 1
     return first_moves
 
-def main():
+
+pgn_file = open("chess_games.pgn", encoding="utf-8")
+user = "TensiKReyDama"
+games = build_games_list(pgn_file)
+
+if __name__ == "__main__":
     player = Player(user, pgn_file)
     chess_games = build_games_list(pgn_file)
 

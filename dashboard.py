@@ -34,10 +34,10 @@ st.space("xxsmall")
 tab1, tab2, tab3 = st.tabs(["General", "White", "Black"])
 
 with tab1:
-    st.pyplot(graphs.results_graph(player, color=""))
+    st.pyplot(graphs.results_graph(player, color=""), transparent="True")
 with tab2:
-    st.pyplot(graphs.results_graph(player, color="white"))
+    st.pyplot(graphs.results_graph(player, color="white"), transparent="True")
 with tab3:
-    st.pyplot(graphs.results_graph(player, color="black"))
+    st.pyplot(graphs.results_graph(player, color="black"), transparent="True")
 
 st.bottom.link_button("Proyecto", url="https://github.com/angelrbl/chesstats", type="secondary", icon="🐈", )
