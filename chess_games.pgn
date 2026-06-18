@@ -1,5 +1,262 @@
 [Event "Live Chess"]
 [Site "Chess.com"]
+[Date "2026.06.05"]
+[Round "-"]
+[White "TensiKReyDama"]
+[Black "copazenga"]
+[Result "1-0"]
+[WhiteElo "631"]
+[BlackElo "623"]
+[TimeControl "300"]
+[EndTime "9:56:31 GMT+0000"]
+[Termination "Victoria de TensiKReyDama por jaque mate"]
+
+1. d4 d5 2. Bf4 Nf6 3. Nf3 Nc6 4. e3 Bg4 5. Nbd2 Bxf3 6. Nxf3 e6 7. Ne5 Nxe5 8.
+dxe5 Nh5 9. Bb5+ c6 10. Be2 Nxf4 11. exf4 f6 12. exf6 Qxf6 13. Bh5+ g6 14. Bf3
+O-O-O 15. g3 e5 16. O-O exf4 17. Bg4+ Kb8 18. Qf3 g5 19. Rfe1 Bd6 20. Re6 Qxb2
+21. Rae1 Qxc2 22. h4 fxg3 23. fxg3 Qc5+ 24. Kh2 gxh4 25. Qf6 Bxg3+ 26. Kh3 Rde8
+27. Rxe8+ Rxe8 28. Rxe8+ Kc7 29. Qd8# 1-0
+
+[Event "Live Chess"]
+[Site "Chess.com"]
+[Date "2026.06.05"]
+[Round "-"]
+[White "rniwahyudi"]
+[Black "TensiKReyDama"]
+[Result "0-1"]
+[WhiteElo "626"]
+[BlackElo "639"]
+[TimeControl "300"]
+[EndTime "9:59:23 GMT+0000"]
+[Termination "Victoria de TensiKReyDama por abandono"]
+
+1. e4 d6 2. Nf3 Nd7 3. d4 Ngf6 4. Bc4 g6 5. Nc3 Bg7 6. Bg5 O-O 7. e5 dxe5 8.
+dxe5 Ng4 9. e6 Nde5 10. Nxe5 Nxe5 11. exf7+ Nxf7 12. O-O Qxd1 13. Raxd1 e6 14.
+Rfe1 Nxg5 15. Nb5 c6 16. Nc7 Rb8 17. Nxe6 Bxe6 18. Bxe6+ Nxe6 19. Rxe6 Bxb2 20.
+Rd7 Rbd8 21. Rxb7 Rd1+ 0-1
+
+[Event "Live Chess"]
+[Site "Chess.com"]
+[Date "2026.06.05"]
+[Round "-"]
+[White "sosotwin"]
+[Black "TensiKReyDama"]
+[Result "1-0"]
+[WhiteElo "644"]
+[BlackElo "631"]
+[TimeControl "300"]
+[EndTime "10:25:51 GMT+0000"]
+[Termination "Victoria de sosotwin por jaque mate"]
+
+1. e4 d6 2. d4 g6 3. Nf3 Nf6 4. Bc4 Bg7 5. e5 dxe5 6. Nxe5 Nbd7 7. O-O O-O 8.
+Bg5 b6 9. c3 Bb7 10. Qb3 Nxe5 11. dxe5 Ng4 12. Rd1 Qc8 13. e6 f6 14. Rd7 fxg5
+15. Rxe7 Re8 16. Rf7 Ne5 17. Nd2 Nxc4 18. Qxc4 Rxe6 19. Rxc7 Qe8 20. Re1 Ba6 21.
+Qxe6+ Kf8 22. Rxg7 Bb5 23. Rg8# 1-0
+
+[Event "Live Chess"]
+[Site "Chess.com"]
+[Date "2026.06.05"]
+[Round "-"]
+[White "TensiKReyDama"]
+[Black "TheUnitedChessEmpire"]
+[Result "1-0"]
+[WhiteElo "639"]
+[BlackElo "639"]
+[TimeControl "300"]
+[EndTime "16:26:36 GMT+0000"]
+[Termination "Victoria de TensiKReyDama por jaque mate"]
+
+1. d4 Nf6 2. Bf4 e5 3. dxe5 Nd5 4. e3 Nxf4 5. exf4 Bc5 6. Nf3 O-O 7. Bc4 Kh8 8.
+O-O d5 9. Bd3 h6 10. Nbd2 Nc6 11. c4 d4 12. Nb3 Be7 13. Be4 Bg4 14. h3 Bxf3 15.
+Qxf3 f5 16. Bxc6 bxc6 17. Qxc6 a5 18. Nc5 Bxc5 19. Qxc5 Re8 20. Rad1 d3 21. b4
+axb4 22. Qxb4 Re6 23. a3 Raa6 24. Rfe1 Rab6 25. Qc3 d2 26. Rxd2 Qg8 27. g4 fxg4
+28. hxg4 h5 29. f5 Rh6 30. g5 Rhc6 31. Qf3 h4 32. g6 Qxc4 33. Qh5+ Kg8 34. Rd8#
+1-0
+
+[Event "Live Chess"]
+[Site "Chess.com"]
+[Date "2026.06.05"]
+[Round "-"]
+[White "TensiKReyDama"]
+[Black "nirmah"]
+[Result "1-0"]
+[WhiteElo "647"]
+[BlackElo "616"]
+[TimeControl "300"]
+[EndTime "16:37:19 GMT+0000"]
+[Termination "TensiKReyDama ha ganado por desistimiento de su oponente"]
+
+1. d4 d5 2. Bf4 Nc6 3. Nf3 Nf6 4. e3 1-0
+
+[Event "Live Chess"]
+[Site "Chess.com"]
+[Date "2026.06.05"]
+[Round "-"]
+[White "TensiKReyDama"]
+[Black "luvi69"]
+[Result "1-0"]
+[WhiteElo "654"]
+[BlackElo "617"]
+[TimeControl "300"]
+[EndTime "16:41:05 GMT+0000"]
+[Termination "Victoria de TensiKReyDama por abandono"]
+
+1. d4 e5 2. Nf3 exd4 3. Nxd4 d5 4. Nc3 Bb4 5. Bd2 Bxc3 6. Bxc3 Nf6 7. Nf3 O-O 8.
+Bxf6 Qxf6 9. e3 Qxb2 10. Bd3 Bg4 11. O-O Nc6 12. h3 Bxh3 13. gxh3 Ne5 14. Nxe5
+Qxe5 15. f4 Qf6 16. Qh5 h6 17. Qxd5 Rad8 18. Qxb7 Rfe8 19. Rfe1 c5 20. Qxa7 Qh4
+21. Bc4 Rf8 22. Qxc5 Qg3+ 23. Kf1 Qxh3+ 24. Kf2 Rd2+ 25. Re2 Qh2+ 26. Ke1 Rxc2
+27. Rxh2 Rd8 28. Rxc2 1-0
+
+[Event "Live Chess"]
+[Site "Chess.com"]
+[Date "2026.06.05"]
+[Round "-"]
+[White "Aryan_2383"]
+[Black "TensiKReyDama"]
+[Result "0-1"]
+[WhiteElo "644"]
+[BlackElo "662"]
+[TimeControl "300"]
+[EndTime "16:44:52 GMT+0000"]
+[Termination "Victoria de TensiKReyDama por jaque mate"]
+
+1. e4 Nf6 2. Nf3 d6 3. Nc3 Nbd7 4. Bc4 g6 5. d3 Bg7 6. O-O O-O 7. Nd5 e6 8.
+Nxf6+ Nxf6 9. d4 Nxe4 10. Re1 d5 11. Bb3 b6 12. c3 Bb7 13. Ng5 Nxg5 14. Qg4 h6
+15. Bxg5 Qxg5 16. Qh3 c5 17. Re5 Bxe5 18. dxe5 c4 19. Ba4 Qxe5 20. Qxh6 d4 21.
+cxd4 Qd5 22. f3 Qxd4+ 23. Kh1 Rfd8 24. g4 Bxf3# 0-1
+
+[Event "Live Chess"]
+[Site "Chess.com"]
+[Date "2026.06.06"]
+[Round "-"]
+[White "TensiKReyDama"]
+[Black "OtakuSenpai69"]
+[Result "1-0"]
+[WhiteElo "670"]
+[BlackElo "658"]
+[TimeControl "300"]
+[EndTime "10:11:28 GMT+0000"]
+[Termination "Victoria de TensiKReyDama por abandono"]
+
+1. d4 d5 2. Bf4 Nc6 3. Nf3 Nf6 4. e3 Bf5 5. c3 e6 6. Nbd2 Ne4 7. Bd3 Nxf2 8.
+Kxf2 Bxd3 9. Ne5 Be4 10. Nxc6 Qd7 11. Ne5 Qb5 12. Re1 Bd6 13. c4 Qxb2 14. c5
+Bxe5 15. Bxe5 O-O 16. Qg4 f6 17. Bxc7 Qxd2+ 18. Kg1 Qxg2+ 19. Qxg2 Bxg2 20. Kxg2
+f5 21. Rab1 b6 22. cxb6 axb6 23. Rxb6 Rxa2+ 24. Kf3 Rc8 25. Be5 Rxh2 26. Rxe6
+Rcc2 27. e4 Rhf2+ 28. Ke3 fxe4 29. Re8+ Kf7 30. Rd8 Rc3+ 31. Kxf2 e3+ 32. Rxe3
+Rxe3 33. Kxe3 Ke7 34. Rxd5 Ke6 35. Rc5 Kf5 36. Bxg7+ 1-0
+
+[Event "Live Chess"]
+[Site "Chess.com"]
+[Date "2026.06.06"]
+[Round "-"]
+[White "Wardool"]
+[Black "TensiKReyDama"]
+[Result "1-0"]
+[WhiteElo "680"]
+[BlackElo "662"]
+[TimeControl "300"]
+[EndTime "10:46:35 GMT+0000"]
+[Termination "Victoria de Wardool por jaque mate"]
+
+1. b3 Nf6 2. Bb2 g6 3. g3 Bg7 4. Bg2 O-O 5. Nf3 d6 6. O-O Nbd7 7. c4 e5 8. d4 b6
+9. dxe5 dxe5 10. Nxe5 Rb8 11. Nc6 Qe8 12. Nxb8 Nxb8 13. Nc3 Ng4 14. Rb1 f5 15.
+f3 Ne3 16. Qd2 Nxf1 17. Bxf1 Bb7 18. Rd1 Nc6 19. Nd5 Bxb2 20. Qxb2 Qe3+ 21. Nxe3
+f4 22. gxf4 Rxf4 23. Nd5 Rf5 24. Ne7+ Kf7 25. Nxf5 gxf5 26. Rd7+ Ke6 27. Rxc7
+Nd8 28. Rxh7 Nf7 29. Bh3 Ng5 30. Rh6+ Kf7 31. Qf6+ Ke8 32. Qe5+ Kd8 33. Qd6+ Kc8
+34. Rh8# 1-0
+
+[Event "Live Chess"]
+[Site "Chess.com"]
+[Date "2026.06.07"]
+[Round "-"]
+[White "TensiKReyDama"]
+[Black "LewisDwaz"]
+[Result "0-1"]
+[WhiteElo "654"]
+[BlackElo "655"]
+[TimeControl "300"]
+[EndTime "9:18:36 GMT+0000"]
+[Termination "Victoria de LewisDwaz por jaque mate"]
+
+1. d4 d6 2. Bf4 Nf6 3. Nf3 g6 4. e3 Bg7 5. c3 O-O 6. Bd3 Nbd7 7. O-O e5 8. dxe5
+dxe5 9. Nxe5 Nxe5 10. Bxe5 Ng4 11. Bxg7 Kxg7 12. h3 Ne5 13. Be4 c6 14. Qxd8 Rxd8
+15. f4 Nd3 16. Nd2 Nxb2 17. Rad1 Nxd1 18. Rxd1 Be6 19. Kf2 Bxa2 20. Kf3 a5 21.
+Ra1 Be6 22. Rd1 a4 23. Ke2 a3 24. Nb3 Bxb3 25. Rb1 Bc4+ 26. Kf3 a2 27. Ra1 Rd2
+28. g4 Rb2 29. h4 Rd8 30. f5 Bd5 31. Bxd5 Rxd5 32. Kf4 Rb1 33. Rxa2 Rc1 34. Ra3
+Rc5 35. Ra7 b5 36. h5 R1xc3 37. g5 R3c4+ 38. e4 gxf5 39. h6+ Kg6 40. Rd7 Rxe4+
+41. Kf3 Re6 42. Kf4 b4 43. Rd8 b3 44. Rg8+ Kh5 45. Rh8 b2 46. Rxh7 b1=Q 47. g6
+Rxg6 48. Rxf7 Rxh6 49. Rxf5+ Qxf5+ 50. Kg3 Rg6+ 51. Kh2 Rg4 52. Kh3 Qf3+ 53. Kh2
+Rc2# 0-1
+
+[Event "Live Chess"]
+[Site "Chess.com"]
+[Date "2026.06.07"]
+[Round "-"]
+[White "TensiKReyDama"]
+[Black "joca2109"]
+[Result "0-1"]
+[WhiteElo "646"]
+[BlackElo "646"]
+[TimeControl "300"]
+[EndTime "9:25:24 GMT+0000"]
+[Termination "joca2109 ha ganado por desistimiento de su oponente"]
+
+1. d4 e6 2. Bf4 Nc6 3. Nf3 Nf6 4. e3 Nd5 5. Bg5 f6 6. Bh4 g5 7. Bg3 h5 8. Bd3 h4
+9. Bg6+ Ke7 10. Qd3 hxg3 11. Qa3+ d6 12. e4 Ndb4 13. O-O Nxc2 14. Qc3 Nxa1 15.
+Nbd2 Rh6 16. e5 Rxg6 17. exd6+ Qxd6 18. Ne4 Qb4 19. Qc5+ Qxc5 20. Nxc5 Nc2 21.
+Re1 Nxe1 22. Nxe1 Nxd4 23. Ned3 Ne2+ 24. Kf1 gxh2 25. Kxe2 h1=Q 26. f4 Qxg2+ 27.
+Ke3 gxf4+ 28. Nxf4 Qg3+ 29. Ke4 Rg4 0-1
+
+[Event "Live Chess"]
+[Site "Chess.com"]
+[Date "2026.06.07"]
+[Round "-"]
+[White "lmtienn"]
+[Black "TensiKReyDama"]
+[Result "1-0"]
+[WhiteElo "664"]
+[BlackElo "638"]
+[TimeControl "300"]
+[EndTime "10:00:09 GMT+0000"]
+[Termination "Victoria de lmtienn por tiempo"]
+
+1. e4 d6 2. Bc4 Nf6 3. d3 g6 4. Nf3 Bg7 5. Ng5 O-O 6. O-O Nc6 7. Nc3 b6 8. Bd5
+Bb7 9. Qf3 e6 10. Bxc6 Bxc6 11. Qh3 h6 12. Nf3 Bd7 13. Bxh6 e5 14. Qh4 Nh5 15.
+Bxg7 Kxg7 16. Qxd8 Raxd8 17. Nd5 c6 18. Nb4 c5 19. Nd5 Be6 20. c4 Rb8 21. Rac1
+b5 22. b3 bxc4 23. Rxc4 Nf4 24. Ra4 Ne2+ 25. Kh1 Rb7 26. Ng5 Bxd5 27. exd5 Nc3
+28. Ra6 Nxd5 29. Rxd6 Nf4 30. Rd1 Re7 31. g3 Nh5 32. h4 f6 33. Ne6+ Kf7 34. Nxf8
+Kxf8 35. Rd8+ Kf7 36. Re1 f5 37. Rd5 Kf6 38. Rxc5 e4 39. dxe4 fxe4 40. Rc6+ Kf5
+41. Kh2 g5 42. hxg5 Kxg5 43. Kh3 Kf5 44. g4+ Kf4 45. gxh5 e3 46. fxe3+ Rxe3+ 47.
+Rxe3 Kxe3 48. h6 Ke4 49. h7 Ke3 50. h8=Q Kd3 51. Qc3+ Ke4 52. Rc7 Kd5 53. Rxa7
+Ke6 54. b4 Kd5 55. b5 Ke6 56. b6 Kd5 57. Qb3+ Ke5 58. b7 Ke4 59. b8=Q Kd4 60.
+Q8b4+ Ke5 61. Ra5+ Kf6 62. Qb6+ 1-0
+
+[Event "Live Chess"]
+[Site "Chess.com"]
+[Date "2026.06.07"]
+[Round "-"]
+[White "TensiKReyDama"]
+[Black "AitchKayEm"]
+[Result "0-1"]
+[WhiteElo "630"]
+[BlackElo "658"]
+[TimeControl "300"]
+[EndTime "10:07:26 GMT+0000"]
+[Termination "Victoria de AitchKayEm por abandono"]
+
+1. d4 d5 2. Bf4 e6 3. Nf3 Nc6 4. e3 Nf6 5. c3 Ne4 6. Bd3 f6 7. Nbd2 Nxd2 8. Qxd2
+e5 9. dxe5 fxe5 10. Bg5 Be7 11. h4 e4 12. Bxe7 Qxe7 13. Ng5 exd3 14. Qxd3 h6 15.
+Qg6+ Kf8 16. Nh7+ Kg8 17. Nf6+ Qxf6 18. Qe8+ Qf8 19. Qxf8+ Kxf8 20. O-O-O Bf5
+21. Rxd5 Be6 22. Rb5 Rb8 23. f4 g6 24. Rg1 Kg7 25. g4 g5 26. f5 Bxa2 27. hxg5
+hxg5 28. Rf1 Bc4 29. f6+ Kf7 30. Rbf5 Bxf1 31. Rxf1 Rbd8 32. Kc2 Kg6 33. e4 Rhf8
+34. e5 Nxe5 35. Rf5 Rxf6 36. Rxe5 Rf4 37. Re6+ Kf7 38. Rh6 Rxg4 39. Rh7+ Kg6 40.
+Rxc7 Rb8 41. b4 Rg2+ 42. Kb3 Kf6 43. c4 Ke6 44. c5 Kd5 45. Rd7+ Kc6 46. Rd6+ Kb5
+47. Rd1 Rg4 48. Ra1 Rxb4+ 49. Kc3 Kxc5 50. Ra5+ Rb5 51. Ra4 Rc8 52. Rc4+ Kd5 53.
+Rxc8 Rc5+ 54. Rxc5+ Kxc5 55. Kd3 g4 56. Ke2 g3 57. Kf1 a5 58. Kg2 Kc4 59. Kxg3
+a4 60. Kf2 Kc3 61. Ke1 Kc2 62. Ke2 a3 0-1
+
+[Event "Live Chess"]
+[Site "Chess.com"]
 [Date "2026.06.07"]
 [Round "-"]
 [White "victoryvio"]
@@ -247,6 +504,25 @@ Qxd5 22. Nd2 f5 23. h3 fxg4 24. hxg4 Rfe8 25. Rf1 Qa5 26. Nc4 Qb4 27. Rac1 Rac8
 
 [Event "Live Chess"]
 [Site "Chess.com"]
+[Date "2026.06.09"]
+[Round "-"]
+[White "Vigasaurus"]
+[Black "TensiKReyDama"]
+[Result "1-0"]
+[WhiteElo "651"]
+[BlackElo "638"]
+[TimeControl "180+2"]
+[EndTime "18:23:50 GMT+0000"]
+[Termination "Victoria de Vigasaurus por abandono"]
+
+1. e4 Nc6 2. Nc3 e5 3. Nf3 Nf6 4. Bb5 Nd4 5. Nxd4 exd4 6. Nd5 Nxe4 7. Qe2 Qh4 8.
+Nxc7+ Kd8 9. Nxa8 Bb4 10. c3 dxc3 11. bxc3 Bc5 12. d4 Bd6 13. Bd3 Nxc3 14. g3
+Qxd4 15. Bg5+ f6 16. Be3 Qb4 17. Bd2 b6 18. O-O Bb7 19. Bxc3 Qxc3 20. Be4 Bxe4
+21. Qxe4 Be5 22. Rac1 Qd2 23. Nc7 Bxc7 24. Qa8+ Ke7 25. Qxh8 Qxa2 26. Qxg7+ Ke6
+27. Rfe1+ Be5 28. Qg8+ 1-0
+
+[Event "Live Chess"]
+[Site "Chess.com"]
 [Date "2026.06.10"]
 [Round "-"]
 [White "Mithun114"]
@@ -297,3 +573,419 @@ Ne4 9. Bd3 b5 10. Qa6 Be7 11. Qxc6+ Kf8 12. O-O a6 13. f3 Rc8 14. Qxa6 Nc5 15.
 Qxb5 Bf5 16. Bxf5 exf5 17. Nd2 Rb8 18. Qc6 Rxb2 19. e4 fxe4 20. fxe4 dxe4 21.
 Rab1 Rxd2 22. Bxd2 g6 23. Be3 Qa5 24. Qc8+ Kg7 25. Bh6+ Kxh6 26. Qxh8 Qxc3 27.
 Rxf7 Qxe5 28. Qxe5 Nd7 29. Qxe7 1-0
+
+[Event "Live Chess"]
+[Site "Chess.com"]
+[Date "2026.06.10"]
+[Round "-"]
+[White "TensiKReyDama"]
+[Black "404_SkillNotFound"]
+[Result "0-1"]
+[WhiteElo "638"]
+[BlackElo "656"]
+[TimeControl "300"]
+[EndTime "14:37:33 GMT+0000"]
+[Termination "Victoria de 404_SkillNotFound por jaque mate"]
+
+1. d4 Nf6 2. Bf4 g6 3. e3 Bg7 4. c3 O-O 5. Nf3 c6 6. Bd3 Qb6 7. Nbd2 Qxb2 8. O-O
+Qxc3 9. Bxb8 Rxb8 10. Ne4 Nxe4 11. Bxe4 d5 12. Bd3 Bg4 13. Be2 a5 14. h3 Bxf3
+15. Bxf3 b5 16. a4 b4 17. e4 Qxd4 18. exd5 Qxd1 19. Rfxd1 cxd5 20. Bxd5 Bxa1 21.
+Rxa1 b3 22. Bxb3 Rb7 23. Bd5 Rb6 24. f4 Rfb8 25. Be4 Rb4 26. Bc2 Rxf4 27. g3 Rf3
+28. Kg2 Rc3 29. Be4 Rbb3 30. Bd5 Rxg3+ 31. Kf2 Rbc3 32. h4 Rh3 33. Re1 Rh2+ 34.
+Kg1 Rxh4 35. Rxe7 Rf4 36. Re8+ Kg7 37. Re7 Ra3 38. Bc6 Rc4 39. Bb5 Rc2 40. Ra7
+Ra1+ 41. Bf1 Rxa4 42. Re7 Ra1 43. Re3 a4 44. Rf3 a3 45. Kh1 a2 46. Ra3 Rb1 47.
+Kg1 a1=Q 48. Rxa1 Rxa1 49. Kh1 Rxf1# 0-1
+
+[Event "Live Chess"]
+[Site "Chess.com"]
+[Date "2026.06.10"]
+[Round "-"]
+[White "Lulutime1"]
+[Black "TensiKReyDama"]
+[Result "0-1"]
+[WhiteElo "639"]
+[BlackElo "646"]
+[TimeControl "300"]
+[EndTime "14:40:55 GMT+0000"]
+[Termination "Victoria de TensiKReyDama por abandono"]
+
+1. e4 e5 2. Nf3 Nc6 3. Nc3 Nf6 4. Bc4 g6 5. O-O Bg7 6. h3 O-O 7. d3 d6 8. Be3 d5
+9. exd5 Nd4 10. Bxd4 exd4 11. Nxd4 c5 12. dxc6 Qxd4 13. Nb5 Qxb2 14. Rb1 Qe5 15.
+cxb7 Bxb7 16. Nc7 Qxc7 17. d4 Rfd8 18. d5 Nxd5 19. Bxd5 Bxd5 20. Qd2 Bxg2 21.
+Kxg2 Rxd2 22. Rfd1 Rxd1 23. Rxd1 Qc6+ 0-1
+
+[Event "Live Chess"]
+[Site "Chess.com"]
+[Date "2026.06.11"]
+[Round "-"]
+[White "TensiKReyDama"]
+[Black "roziboyolimov"]
+[Result "1-0"]
+[WhiteElo "653"]
+[BlackElo "617"]
+[TimeControl "300"]
+[EndTime "10:41:40 GMT+0000"]
+[Termination "Victoria de TensiKReyDama por abandono"]
+
+1. d4 e6 2. Nf3 Qf6 3. Bf4 Qxf4 4. Nc3 c5 5. e3 Qf6 6. dxc5 Bxc5 7. Ne4 Qe7 8.
+Nxc5 Qxc5 9. Qd4 Qxc2 10. Bb5 Nf6 11. Ne5 O-O 12. O-O a6 13. Ba4 Nc6 14. Nxc6
+Qf5 15. Ne7+ 1-0
+
+[Event "Live Chess"]
+[Site "Chess.com"]
+[Date "2026.06.11"]
+[Round "-"]
+[White "farru008"]
+[Black "TensiKReyDama"]
+[Result "1-0"]
+[WhiteElo "652"]
+[BlackElo "645"]
+[TimeControl "300"]
+[EndTime "10:47:31 GMT+0000"]
+[Termination "Victoria de farru008 por jaque mate"]
+
+1. d4 Nf6 2. g3 d6 3. Bg2 Nbd7 4. Nf3 g6 5. O-O Bg7 6. c3 O-O 7. Bd2 e5 8. Qc1
+exd4 9. cxd4 c5 10. Bh6 cxd4 11. Bxg7 Kxg7 12. Nxd4 d5 13. Nc3 Ne5 14. Rd1 a6
+15. f4 Neg4 16. e4 dxe4 17. Nxe4 Nxe4 18. Ne6+ fxe6 19. Rxd8 Rxd8 20. Bxe4 Rd4
+21. Qc3 e5 22. fxe5 Rxe4 23. Rf1 Be6 24. Qc7+ Kh6 25. Qxb7 Rc8 26. Qxe4 a5 27.
+h3 Bf5 28. Qf4+ g5 29. Qxf5 Ne3 30. Qxc8 Nxf1 31. Kxf1 Kh5 32. Kf2 g4 33. Qxg4+
+Kh6 34. Qc8 Kg7 35. e6 Kf6 36. Qd7 h5 37. e7 Ke5 38. e8=Q+ Kf6 39. Qdf7+ Kg5 40.
+Qeg8+ Kh6 41. Qfh7# 1-0
+
+[Event "Live Chess"]
+[Site "Chess.com"]
+[Date "2026.06.11"]
+[Round "-"]
+[White "TensiKReyDama"]
+[Black "DatNB1"]
+[Result "1-0"]
+[WhiteElo "653"]
+[BlackElo "632"]
+[TimeControl "300"]
+[EndTime "10:57:00 GMT+0000"]
+[Termination "Victoria de TensiKReyDama por tiempo"]
+
+1. d4 d5 2. Bf4 Nf6 3. Nf3 Nc6 4. e3 g6 5. c3 Bg7 6. Nbd2 O-O 7. Bd3 a6 8. O-O
+Nh5 9. Be5 Nxe5 10. Nxe5 c6 11. g4 Nf6 12. f4 e6 13. g5 Nh5 14. Be2 f6 15. gxf6
+Nxf6 16. c4 Ne4 17. Nxe4 dxe4 18. Bg4 c5 19. d5 exd5 20. Bxc8 Rxc8 21. cxd5 Qh4
+22. d6 Qh5 23. Qd5+ Kh8 24. Nf7+ Rxf7 25. Qxf7 Qf5 26. Qxf5 gxf5 27. Rad1 Rd8
+28. d7 Bf6 29. Rd5 Kg7 30. Rfd1 a5 31. Rxf5 b6 32. Rd6 1-0
+
+[Event "Live Chess"]
+[Site "Chess.com"]
+[Date "2026.06.11"]
+[Round "-"]
+[White "manjoe21"]
+[Black "TensiKReyDama"]
+[Result "0-1"]
+[WhiteElo "650"]
+[BlackElo "661"]
+[TimeControl "300"]
+[EndTime "12:52:55 GMT+0000"]
+[Termination "Victoria de TensiKReyDama por abandono"]
+
+1. e4 Nc6 2. Nc3 e5 3. f4 Nf6 4. fxe5 Nxe5 5. Nf3 d6 6. Bb5+ Bd7 7. a4 g6 8. O-O
+Bg7 9. Nd5 Nxe4 10. Bxd7+ Qxd7 11. Nxe5 dxe5 12. c4 O-O 13. d3 Nc5 14. Bg5 e4
+15. Ne7+ Kh8 16. Nd5 exd3 17. Bf6 Bxf6 18. Nxf6 Qd4+ 19. Kh1 Qxc4 20. Qf3 b6 21.
+Qh3 h5 22. Nxh5 Qe6 23. Qh4 Qe4 24. Nf6+ Qxh4 0-1
+
+[Event "Live Chess"]
+[Site "Chess.com"]
+[Date "2026.06.11"]
+[Round "-"]
+[White "TensiKReyDama"]
+[Black "JustTerr1ble"]
+[Result "1-0"]
+[WhiteElo "669"]
+[BlackElo "641"]
+[TimeControl "300"]
+[EndTime "12:59:46 GMT+0000"]
+[Termination "Victoria de TensiKReyDama por jaque mate"]
+
+1. d4 c6 2. Bf4 d5 3. Nf3 Bf5 4. e3 Na6 5. c3 e6 6. Bd3 Nf6 7. O-O Bd6 8. Ne5
+Bxd3 9. Qxd3 O-O 10. Nd2 c5 11. Rfe1 cxd4 12. exd4 Bxe5 13. Bxe5 Ne4 14. Nxe4
+dxe4 15. Qxe4 f5 16. Qe3 Rc8 17. Rac1 b6 18. c4 Nc7 19. c5 bxc5 20. dxc5 Nd5 21.
+Qd4 f4 22. Bxg7 Rf5 23. Rxe6 Qa5 24. Re5 Rxc5 25. Rxc5 Qb4 26. Qxd5+ Kxg7 27.
+Qd7+ Kg6 28. Qxf5+ Kg7 29. Rc7+ Kg8 30. Re8+ Qf8 31. Qxf8# 1-0
+
+[Event "Live Chess"]
+[Site "Chess.com"]
+[Date "2026.06.12"]
+[Round "-"]
+[White "TensiKReyDama"]
+[Black "VISIstar"]
+[Result "1-0"]
+[WhiteElo "677"]
+[BlackElo "662"]
+[TimeControl "300"]
+[EndTime "10:00:21 GMT+0000"]
+[Termination "Victoria de TensiKReyDama por jaque mate"]
+
+1. d4 Nc6 2. Bf4 Nf6 3. Nf3 d5 4. e3 Bf5 5. c3 a6 6. Bd3 Qd7 7. O-O O-O-O 8. Ne5
+Nxe5 9. dxe5 Bxd3 10. Qxd3 Nh5 11. Nd2 e6 12. e4 Be7 13. g3 f6 14. exd5 exd5 15.
+Rfe1 Rhe8 16. e6 Qc6 17. Qxh7 Nxf4 18. gxf4 g5 19. fxg5 fxg5 20. Qf5 Rh8 21. Nf3
+Rdg8 22. Qf7 Qd6 23. Rad1 g4 24. Nd4 g3 25. fxg3 Rxh2 26. Nf5 Qxg3+ 27. Nxg3
+Rxg3+ 28. Kxh2 Bd6 29. Qe8# 1-0
+
+[Event "Live Chess"]
+[Site "Chess.com"]
+[Date "2026.06.12"]
+[Round "-"]
+[White "0xvdh"]
+[Black "TensiKReyDama"]
+[Result "1-0"]
+[WhiteElo "682"]
+[BlackElo "669"]
+[TimeControl "300"]
+[EndTime "10:55:24 GMT+0000"]
+[Termination "Victoria de 0xvdh por jaque mate"]
+
+1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. Ng5 d5 5. exd5 Nxd5 6. Nxf7 Kxf7 7. Qf3+ Kg8
+8. Qxd5+ Qxd5 9. Bxd5+ Be6 10. Bxe6# 1-0
+
+[Event "Live Chess"]
+[Site "Chess.com"]
+[Date "2026.06.12"]
+[Round "-"]
+[White "Novill7"]
+[Black "TensiKReyDama"]
+[Result "1-0"]
+[WhiteElo "682"]
+[BlackElo "661"]
+[TimeControl "300"]
+[EndTime "11:03:54 GMT+0000"]
+[Termination "Victoria de Novill7 por jaque mate"]
+
+1. g3 Nf6 2. Bg2 g6 3. e3 Bg7 4. Ne2 O-O 5. c3 d6 6. Na3 Nbd7 7. b4 b6 8. Bxa8
+Ne5 9. d4 Neg4 10. Ng1 Bf5 11. Bf3 Qd7 12. h3 Be4 13. Bxe4 Nxf2 14. Kxf2 Nxe4+
+15. Ke1 Nxg3 16. Rh2 Ne4 17. Nc4 Nxc3 18. Qc2 Nd5 19. a4 c5 20. a5 Nxe3 21. Bxe3
+cxd4 22. Bf2 d5 23. Rd1 dxc4 24. Qxc4 b5 25. Rxd4 Qe6+ 26. Qxe6 fxe6 27. Rd7
+Bc3+ 28. Kd1 Bxb4 29. Rxa7 Bc5 30. Bxc5 Rd8+ 31. Kc2 Rd5 32. Bxe7 e5 33. Ne2 Kf7
+34. Bh4+ Ke6 35. Ra6+ Kf5 36. Rf2+ Ke4 37. Nc3+ Ke3 38. Nxd5+ Kd4 39. Nc7 e4 40.
+Rc6 e3 41. Nxb5+ Ke4 42. Re2 Kf4 43. a6 g5 44. Be1 Kf3 45. Kd1 h5 46. a7 g4 47.
+hxg4 hxg4 48. Rf6+ Ke4 49. a8=Q+ Kd3 50. Qd8+ Kc4 51. Qd4+ Kxb5 52. Rf5+ Kc6 53.
+Qf6+ Kd7 54. Rd2+ Ke8 55. Qf7# 1-0
+
+[Event "Live Chess"]
+[Site "Chess.com"]
+[Date "2026.06.12"]
+[Round "-"]
+[White "TensiKReyDama"]
+[Black "ayzen69"]
+[Result "1-0"]
+[WhiteElo "669"]
+[BlackElo "649"]
+[TimeControl "300"]
+[EndTime "11:14:12 GMT+0000"]
+[Termination "Victoria de TensiKReyDama por jaque mate"]
+
+1. d4 e5 2. dxe5 Qe7 3. Nf3 Nc6 4. Bg5 Qc5 5. Nc3 Nxe5 6. Nxe5 Qxe5 7. Qd2 Bb4
+8. Bf4 Qf6 9. e3 d6 10. Bb5+ c6 11. Ba4 b5 12. Bb3 d5 13. a3 Ba5 14. Ba2 Ne7 15.
+b4 Bb6 16. e4 dxe4 17. Nxe4 Qxa1+ 18. Qc1 Qxa2 19. O-O O-O 20. Bd6 Re8 21. Qg5
+Nd5 22. Be5 f6 23. Nxf6+ Nxf6 24. Bxf6 Qf7 25. Bb2 Kh8 26. Kh1 h6 27. Qg3 Bc7
+28. f4 Kh7 29. Qd3+ Bf5 30. Qd4 Rad8 31. Qc5 Bd6 32. Qc3 Kh8 33. g4 Bxg4 34. f5
+Bxf5 35. Rxf5 Qxf5 36. Qxg7# 1-0
+
+[Event "Live Chess"]
+[Site "Chess.com"]
+[Date "2026.06.13"]
+[Round "-"]
+[White "TensiKReyDama"]
+[Black "KaisarPecatur"]
+[Result "1-0"]
+[WhiteElo "677"]
+[BlackElo "649"]
+[TimeControl "300"]
+[EndTime "14:11:36 GMT+0000"]
+[Termination "TensiKReyDama ha ganado por desistimiento de su oponente"]
+
+1. d4 d6 2. Bf4 Nf6 3. Nf3 g6 4. e3 Bg7 5. c3 O-O 6. Nbd2 e5 7. dxe5 dxe5 8.
+Bxe5 Ng4 9. Bxg7 Kxg7 10. Be2 h5 11. O-O h4 12. h3 Rh8 13. Ng5 Qxg5 14. Bxg4
+Bxg4 15. hxg4 h3 16. g3 h2+ 17. Kh1 Qd5+ 18. f3 Nc6 19. e4 Qd3 20. Rf2 Ne5 21.
+Rxh2 Nxg4 22. fxg4 Qxg3 23. Nf1 Qxg4 24. Qxg4 1-0
+
+[Event "Live Chess"]
+[Site "Chess.com"]
+[Date "2026.06.13"]
+[Round "-"]
+[White "TensiKReyDama"]
+[Black "elicrisio"]
+[Result "1-0"]
+[WhiteElo "686"]
+[BlackElo "690"]
+[TimeControl "300"]
+[EndTime "14:17:31 GMT+0000"]
+[Termination "Victoria de TensiKReyDama por jaque mate"]
+
+1. d4 g6 2. Bf4 Bg7 3. e3 Nf6 4. Nf3 d6 5. c3 Nbd7 6. Bd3 O-O 7. Nbd2 Rb8 8. O-O
+b6 9. h3 c5 10. Re1 cxd4 11. exd4 Bb7 12. Be4 Nxe4 13. Nxe4 d5 14. Bxb8 dxe4 15.
+Ne5 Qxb8 16. Nxd7 Qf4 17. Nxf8 Bxf8 18. g3 Qf5 19. g4 Qf4 20. d5 e3 21. Rxe3 e6
+22. dxe6 fxe6 23. Qb3 Bd5 24. c4 Bc6 25. c5 b5 26. Qxe6+ Kg7 27. Qxc6 Kh6 28.
+Qxb5 Bg7 29. Rae1 Bd4 30. Qe8 Bxe3 31. Rxe3 Qc4 32. Qf8+ Kg5 33. Re5+ Kh4 34.
+Qh6# 1-0
+
+[Event "Live Chess"]
+[Site "Chess.com"]
+[Date "2026.06.13"]
+[Round "-"]
+[White "UttAraGHOSH"]
+[Black "TensiKReyDama"]
+[Result "1-0"]
+[WhiteElo "704"]
+[BlackElo "678"]
+[TimeControl "300"]
+[EndTime "14:23:46 GMT+0000"]
+[Termination "Victoria de UttAraGHOSH por jaque mate"]
+
+1. e4 e5 2. Nc3 Nf6 3. f4 exf4 4. e5 Ng4 5. Qxg4 d6 6. Qxf4 Nc6 7. Nf3 h6 8. Bc4
+Be6 9. Bxe6 fxe6 10. O-O dxe5 11. Nxe5 Bc5+ 12. Kh1 Nxe5 13. Qxe5 Qe7 14. Qh5+
+Kd7 15. Rf7 g6 16. Rxe7+ Kxe7 17. Qxc5+ Kf6 18. Qxc7 Rab8 19. Qf4+ Kg7 20. Qc7+
+Kf6 21. d4 e5 22. Qxe5+ Kf7 23. Bxh6 Rhe8 24. Qg7+ Ke6 25. Re1+ Kd6 26. Bf4+ Kc6
+27. Rxe8 Rxe8 28. h3 Re1+ 29. Kh2 Re2 30. Nxe2 g5 31. Bxg5 b5 32. Qxa7 b4 33.
+Qa4+ Kb6 34. Qxb4+ Kc6 35. Qc4+ Kd6 36. Bf4+ Kd7 37. Qc7+ Ke6 38. Qd6+ Kf5 39.
+Qe5+ Kg6 40. c4 Kf7 41. c5 Kf8 42. c6 Kf7 43. c7 Kg6 44. c8=Q Kf7 45. Qc6 Kf8
+46. Qcf6+ Kg8 47. Qeg5+ Kh7 48. Qfh6# 1-0
+
+[Event "Live Chess"]
+[Site "Chess.com"]
+[Date "2026.06.13"]
+[Round "-"]
+[White "rump_sux"]
+[Black "TensiKReyDama"]
+[Result "1-0"]
+[WhiteElo "683"]
+[BlackElo "670"]
+[TimeControl "300"]
+[EndTime "14:32:48 GMT+0000"]
+[Termination "Victoria de rump_sux por tiempo"]
+
+1. c4 Nf6 2. d4 g6 3. e3 Bg7 4. Ne2 O-O 5. Ng3 d6 6. Be2 Nbd7 7. O-O b6 8. Nc3
+Bb7 9. f3 e5 10. b3 c5 11. d5 e4 12. fxe4 Ng4 13. Bxg4 Nf6 14. Bd2 Nxg4 15. Qxg4
+h5 16. Qd1 Bc8 17. Qf3 Bg4 18. Qf2 f5 19. h3 h4 20. Nh1 Bh5 21. Qe1 fxe4 22.
+Nxe4 Bxa1 23. Qxa1 Rxf1+ 24. Qxf1 Qe7 25. Nc3 Rf8 26. Nf2 a6 27. Qc1 Qf7 28.
+Nce4 Qf5 29. Qe1 g5 30. Nxd6 Qe5 31. Nde4 g4 32. hxg4 Bg6 33. Bc3 Qe7 34. d6 Qe8
+35. Nf6+ Rxf6 36. Bxf6 Qf7 37. Bxh4 b5 38. Qd1 bxc4 39. d7 c3 40. d8=Q+ Kg7 41.
+Q8d4+ Kh6 42. Qxc3 Bc2 43. Qdd2 Bxb3 44. axb3 Qg6 45. e4+ Kh7 46. Qd7+ Qg7 47.
+Qf5+ Qg6 48. Qxg6+ Kxg6 49. Qxc5 a5 50. Qxa5 Kf7 51. Qf5+ Ke8 52. Qf6 Kd7 53.
+Qe7+ 1-0
+
+[Event "Live Chess"]
+[Site "Chess.com"]
+[Date "2026.06.13"]
+[Round "-"]
+[White "Taha_Islam"]
+[Black "TensiKReyDama"]
+[Result "1-0"]
+[WhiteElo "687"]
+[BlackElo "662"]
+[TimeControl "300"]
+[EndTime "14:39:44 GMT+0000"]
+[Termination "Victoria de Taha_Islam por tiempo"]
+
+1. e4 Nf6 2. Nc3 e5 3. Nf3 Nc6 4. d4 d6 5. d5 Nd4 6. Nxd4 exd4 7. Qxd4 g6 8. e5
+Bg7 9. exf6 Bxf6 10. Qe4+ Be5 11. Bf4 O-O 12. Bxe5 dxe5 13. Qxe5 f6 14. Qd4 Qd6
+15. O-O-O c5 16. Qc4 Bg4 17. Nb5 Qb6 18. d6+ Kg7 19. Qxg4 Qxb5 20. Bxb5 a6 21.
+Qd7+ Kh6 22. Qxb7 axb5 23. Qxb5 Rad8 24. Qxc5 f5 25. d7 Rf7 26. Qc8 Rxc8 27.
+dxc8=Q 1-0
+
+[Event "Live Chess"]
+[Site "Chess.com"]
+[Date "2026.06.14"]
+[Round "-"]
+[White "aboshmlh"]
+[Black "TensiKReyDama"]
+[Result "1-0"]
+[WhiteElo "672"]
+[BlackElo "654"]
+[TimeControl "300"]
+[EndTime "13:20:16 GMT+0000"]
+[Termination "Victoria de aboshmlh por jaque mate"]
+
+1. e4 d6 2. d3 Nf6 3. Nf3 e5 4. h3 g6 5. Bg5 Bg7 6. Qd2 O-O 7. Be2 Nbd7 8. Nc3
+h6 9. Bh4 g5 10. Bg3 b6 11. h4 g4 12. Nh2 Bb7 13. Nxg4 Nxg4 14. Bxg4 Nf6 15. Be2
+h5 16. O-O-O d5 17. Qg5 dxe4 18. dxe4 Nxe4 19. Nxe4 Bxe4 20. Rxd8 Bxg2 21. Rxf8+
+Rxf8 22. Rg1 f6 23. Qg6 Bd5 24. Bxe5 Rf7 25. Bxc7 Rxc7 26. Qxh5 Bxa2 27. Qe8+
+Kh7 28. Bd3+ Kh6 29. Qg6# 1-0
+
+[Event "Live Chess"]
+[Site "Chess.com"]
+[Date "2026.06.14"]
+[Round "-"]
+[White "TensiKReyDama"]
+[Black "KingMK"]
+[Result "1-0"]
+[WhiteElo "662"]
+[BlackElo "664"]
+[TimeControl "300"]
+[EndTime "20:14:17 GMT+0000"]
+[Termination "Victoria de TensiKReyDama por tiempo"]
+
+1. d4 d5 2. c4 c6 3. Nc3 dxc4 4. e3 b5 5. Nf3 Bg4 6. Be2 Bxf3 7. Bxf3 e6 8. O-O
+Bb4 9. Bd2 Bxc3 10. Bxc3 Nf6 11. e4 O-O 12. e5 Nfd7 13. Qd2 f6 14. Ba5 Qe8 15.
+Bb4 Rf7 16. Bh5 g6 17. Bf3 fxe5 18. Bd6 Qc8 19. dxe5 Qd8 20. Rfe1 Nxe5 21. Rxe5
+Rd7 22. Rxe6 a6 23. b4 a5 24. Be7 Rxd2 25. Bxd8 Rxd8 26. bxa5 Rxa5 27. Rd1 Rf8
+28. Rd2 Ra3 29. Bxc6 Nxc6 30. Rxc6 Rd3 31. Rd6 Rxd2 32. Rxd2 Ra8 33. Rc2 Rd8 34.
+g4 Rd4 35. f3 Rd3 36. Kg2 c3 37. Kg3 b4 38. h4 Rd2 39. Rc1 Rxa2 40. Re1 c2 41.
+Rc1 b3 42. h5 Rb2 43. Ra1 Ra2 44. Rc1 Rb2 45. Ra1 Rb1 46. Ra8+ 1-0
+
+[Event "Live Chess"]
+[Site "Chess.com"]
+[Date "2026.06.18"]
+[Round "-"]
+[White "TensiKReyDama"]
+[Black "Timmy2gunns"]
+[Result "0-1"]
+[WhiteElo "654"]
+[BlackElo "676"]
+[TimeControl "300"]
+[EndTime "9:31:55 GMT+0000"]
+[Termination "Victoria de Timmy2gunns por jaque mate"]
+
+1. d4 d5 2. c4 e6 3. Nc3 dxc4 4. e4 e5 5. Bxc4 exd4 6. Qf3 f6 7. Nd5 c6 8. Nb4
+Bxb4+ 9. Kf1 b5 10. Bxg8 Rxg8 11. Ne2 d3 12. Nc3 d2 13. Bxd2 Qxd2 14. Qh5+ g6
+15. Qxh7 Rf8 16. Qxg6+ Kd8 17. Rd1 Qxd1+ 18. Nxd1 Nd7 19. a3 Bc5 20. g3 Ne5 21.
+Qf5 Bxf5 22. exf5 Nf3 23. Kg2 Ng5 24. Nc3 Re8 25. Rd1+ Kc7 26. a4 b4 27. Ne2
+Rxe2 28. Rf1 Rxb2 29. h4 Ne4 30. Kf3 Nd2+ 31. Ke2 Nxf1+ 32. Kxf1 Bxf2 33. Kg2
+Bc5+ 34. Kh3 Ra2 35. g4 Rxa4 36. g5 fxg5 37. hxg5 b3 38. g6 b2 39. g7 b1=Q 40.
+f6 Qb3+ 41. Kg2 Ra2+ 42. Kf1 Qb1# 0-1
+
+[Event "Live Chess"]
+[Site "Chess.com"]
+[Date "2026.06.18"]
+[Round "-"]
+[White "deysujit400"]
+[Black "TensiKReyDama"]
+[Result "1-0"]
+[WhiteElo "657"]
+[BlackElo "646"]
+[TimeControl "300"]
+[EndTime "9:38:23 GMT+0000"]
+[Termination "Victoria de deysujit400 por jaque mate"]
+
+1. e4 d6 2. Bc4 Nf6 3. Nc3 g6 4. Qf3 Nbd7 5. Nh3 Bg7 6. d3 O-O 7. Ng5 e6 8. Qh3
+h6 9. Nf3 d5 10. exd5 exd5 11. Bxd5 Nxd5 12. Bxh6 Bxh6 13. Qxh6 Re8+ 14. Kd2
+Nxc3 15. bxc3 Nf6 16. Ng5 Ne4+ 17. Nxe4 Rxe4 18. Rae1 Rh4 19. Re8+ Qxe8 20. Qxh4
+Bf5 21. Re1 Qb5 22. Qe7 Rc8 23. Qf6 Re8 24. f3 Rxe1 25. Kxe1 Qb1+ 26. Kd2 Qxa2
+27. Qd8+ Kg7 28. Qxc7 b6 29. g4 Be6 30. h4 Kh6 31. Qd8 Qd5 32. Qh8# 1-0
+
+[Event "Live Chess"]
+[Site "Chess.com"]
+[Date "2026.06.18"]
+[Round "-"]
+[White "elodgrenouil"]
+[Black "TensiKReyDama"]
+[Result "1-0"]
+[WhiteElo "666"]
+[BlackElo "638"]
+[TimeControl "300"]
+[EndTime "9:44:18 GMT+0000"]
+[Termination "Victoria de elodgrenouil por jaque mate"]
+
+1. e4 d6 2. d4 Nf6 3. Nc3 Nbd7 4. Bg5 e5 5. dxe5 dxe5 6. Nf3 g6 7. Nxe5 Nxe5 8.
+Qxd8+ Kxd8 9. Bxf6+ Be7 10. Bxh8 Bb4 11. O-O-O+ Bd7 12. Bb5 c6 13. Bxe5 Bxc3 14.
+Bxc3 Kc7 15. Be2 Re8 16. Bf3 f5 17. e5 Be6 18. h4 Bxa2 19. h5 b5 20. hxg6 hxg6
+21. Rh7+ Kb6 22. Rxa7 Kxa7 23. b3 Kb6 24. Kb2 Bxb3 25. Kxb3 c5 26. Rd6+ Kc7 27.
+Rxg6 c4+ 28. Kb4 Rb8 29. e6 Kd6 30. Bd2 Ke7 31. Bf4 Rb6 32. c3 Ra6 33. Bd5 Rb6
+34. g3 Ra6 35. Rg7+ Kf6 36. Rb7 Rd6 37. e7 Rxd5 38. e8=Q Rd1 39. Qf8+ Ke6 40.
+Qh6+ Kd5 41. Rd7+ Ke4 42. Rxd1 Kf3 43. Qh5+ Kxf2 44. Qxf5 Kf3 45. Bc7+ Ke3 46.
+Qf4+ Ke2 47. Rd2+ Ke1 48. Rf2 Kd1 49. Qf3+ Ke1 50. Qe2# 1-0

@@ -2,10 +2,11 @@ import matplotlib.pyplot as plt
 import numpy as np
 import seaborn as sns
 from Player import Player
-import chesstats as cs
+import general as general
+from matplotlib.ticker import MaxNLocator
 
 def first_moves_heatmap(player, selection):
-    matriz_np = np.array(player.get_first_moves_matrix() if selection is "Player" else cs.get_first_moves_matrix(cs.games))
+    matriz_np = np.array(player.get_first_moves_matrix() if selection is "Player" else general.get_first_moves_matrix(general.games))
     matriz_np = np.flipud(matriz_np)
 
     cols = ["a", "b", "c", "d", "e", "f", "g", "h"]
@@ -47,6 +48,7 @@ def results_graph(player, color):
     ax.tick_params(colors='white', labelsize=12)
     ax.set_xlabel('', color='white')
     ax.set_ylabel('Num of games', color='white', fontsize=12)
+    ax.yaxis.set_major_locator(MaxNLocator(integer=True))
     fig.patch.set_alpha(0.0)
     return fig
 
@@ -65,7 +67,7 @@ def first_move_graph(player, selection):
         }
         games_num = len(list(first_move_dict[0].keys()))
     else:
-        first_move_dict = cs.get_first_moves(cs.games)
+        first_move_dict = general.get_first_moves(general.games)
         if not first_move_dict:
             raise Exception("Not enough data to show")
         first_move_white_data = {

@@ -1,5 +1,5 @@
 import streamlit as st
-import chesstats as cs
+import general as general
 from Player import Player
 import graphs
 
@@ -13,7 +13,7 @@ if "username" not in st.session_state:
     st.session_state["username"] = "TensiKReyDama"
 st.session_state["username"] = st.text_input(label="User", value=st.session_state["username"], placeholder="Type a username")
 
-player = Player(st.session_state["username"], cs.pgn_file)
+player = Player(st.session_state["username"], general.pgn_file)
 if "player" not in st.session_state:
     st.session_state["player"] = player
 else:
