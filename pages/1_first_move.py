@@ -34,4 +34,4 @@ with tab2:
     st.pyplot(graphs.first_moves_heatmap(player, selection=option_map[selection]))
 
 
-st.bottom.link_button("Proyecto", url="https://github.com/angelrbl/chesstats", type="secondary", icon="🐈")
+st.bottom.link_button("Project", url="https://github.com/angelrbl/chesstats", type="secondary", icon="🐈")

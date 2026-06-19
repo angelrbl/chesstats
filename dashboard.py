@@ -40,4 +40,4 @@ with tab2:
 with tab3:
     st.pyplot(graphs.results_graph(player, color="black"), transparent="True")
 
-st.bottom.link_button("Proyecto", url="https://github.com/angelrbl/chesstats", type="secondary", icon="🐈", )
+st.bottom.link_button("Project", url="https://github.com/angelrbl/chesstats", type="secondary", icon="🐈", )
