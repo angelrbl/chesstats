@@ -4,14 +4,14 @@ Chesstats is a data analysis tool that helps you visualize and understand differ
 
 ---
 
-### Dashboard
+## 📊 Dashboard
 
 ![Chesstat's main dashboard](images/dashboard.jpg)
 ![First move page](images/first_move.jpg)
 
 ---
 
-### Main features
+## 🚀 Main features
 
 - Dynamic selection of data (General view vs. Specific player)
 - First move frequency analysis
@@ -20,7 +20,7 @@ Chesstats is a data analysis tool that helps you visualize and understand differ
 
 ---
 
-### Technologies and libraries used
+## 🛠 Technologies and libraries used
 
 - Python 3.12
 - Streamlit (front-end)
@@ -29,18 +29,18 @@ Chesstats is a data analysis tool that helps you visualize and understand differ
 
 ---
 
-### Requirements and installation
+## 📦 Requirements and installation
 
 Follow these simple steps in order to install chesstats on your computer:
 
-##### 1. Clone the github repository
+#### 1. Clone the github repository
 
 ```
 git clone https://github.com/angelrbl/chesstats.git
 cd chesstats
 ```
 
-##### 2. Install the dependencies
+#### 2. Install the dependencies
 
 ```
 pip install python-chess matplotlib seaborn streamlit numpy
@@ -48,7 +48,7 @@ pip install python-chess matplotlib seaborn streamlit numpy
 
 That's it, now you have installed chesstats.
 
-##### 3. Execute chesstats
+#### 3. Execute chesstats
 
 ```
 streamlit run dashboard.py
@@ -56,27 +56,27 @@ streamlit run dashboard.py
 
 ---
 
-### Project structure
+## 📂 Project structure
 
-chesstats/
+```chesstats/
 ├── pages/
 │ └── 1_First_move.py
 ├── data/
 │ └── chess-games.pgn
 ├── images/
-│ └── dasboard.jpg
+│ └── dashboard.jpg
 │ └── first_move.jpg
-├── graphs.py - Advanced graph generation using Seaborn
-├── Dashboard.py - Entry point of Streamlit front-end
-├── ChessGame.py - Chess Game logic
-├── Player.py - Player logic
-├── general.py - PGN exctractin logic and general stats
+├── graphs.py        # Advanced graph generation using Seaborn
+├── Dashboard.py     # Entry point of Streamlit front-end
+├── ChessGame.py     # Chess Game logic
+├── Player.py        # Player logic
+├── general.py       # PGN exctractin logic and general stats
 ├── requirements.txt
 └── README.md
-
+```
 ---
 
-### Credits
+## 🧑💻 Credits
 
 @angelrbl
 Project designed with analitic purposes and learning of data science aplied to chess.
