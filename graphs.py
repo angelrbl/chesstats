@@ -4,6 +4,12 @@ import seaborn as sns
 from Player import Player
 import general as general
 from matplotlib.ticker import MaxNLocator
+import streamlit as st
+
+text_color = "white" if st.context.theme.type == "dark" else "black"
+
+def check_text_color():
+    text_color = "white" if st.context.theme.type == "dark" else "black"
 
 def first_moves_heatmap(player, selection):
     matriz_np = np.array(player.get_first_moves_matrix() if selection == "Player" else general.get_first_moves_matrix(general.games))
@@ -15,7 +21,7 @@ def first_moves_heatmap(player, selection):
     fig, ax = plt.subplots(figsize=(7, 7))
     sns.heatmap(matriz_np, annot=True, fmt="d", cmap="YlOrRd", square=True, cbar=False, xticklabels=cols, yticklabels=files, ax=ax)
     fig.patch.set_alpha(0.0)
-    ax.tick_params(colors='white')
+    ax.tick_params(colors=text_color)
 
     return fig
 
@@ -24,7 +30,7 @@ def results_graph(player, color):
         wins = player.get_win_count(color="white")
         draws = player.get_draw_count(color="white")
         losses = player.get_loss_count(color="white")
-        color="#ebebeb"
+        color="#dfd3c3"
     elif color == "black":
         wins = player.get_win_count(color="black")
         draws = player.get_draw_count(color="black")
@@ -34,7 +40,7 @@ def results_graph(player, color):
         wins = player.get_win_count(color="")
         draws = player.get_draw_count(color="")
         losses = player.get_loss_count(color="")
-        color = "#838282"
+        color = "#dfd3c3"
     
     
     chess_results_data = {
@@ -45,9 +51,9 @@ def results_graph(player, color):
     fig, ax = plt.subplots(figsize=(8,6))
     sns.barplot(x='Results',y='Games', data=chess_results_data, color=color, ax=ax)
     sns.despine(left=True, bottom=True)
-    ax.tick_params(colors='white', labelsize=12)
-    ax.set_xlabel('', color='white')
-    ax.set_ylabel('Num of games', color='white', fontsize=12)
+    ax.tick_params(colors=text_color, labelsize=12)
+    ax.set_xlabel('', color=text_color)
+    ax.set_ylabel('Num of games', color=text_color, fontsize=12)
     ax.yaxis.set_major_locator(MaxNLocator(integer=True))
     fig.patch.set_alpha(0.0)
     return fig
@@ -79,13 +85,13 @@ def first_move_graph(player, selection):
     height = max(3, games_num * 0.5) 
 
     fig, ax = plt.subplots(figsize=(8, height))
-    sns.barplot(x='Times', y='Move', data=first_move_white_data, color="#ebebeb", ax=ax)
+    sns.barplot(x='Times', y='Move', data=first_move_white_data, color="#dfd3c3", ax=ax)
     if selection == "Player":
         sns.barplot(x='Times', y='Move', data=first_move_black_data, color="#373737", ax=ax)
-        ax.bar_label(ax.containers[1], padding=8, color='white', fontweight='bold', fontsize=11)
-    ax.tick_params(colors='white', labelsize=12)
-    ax.bar_label(ax.containers[0], padding=8, color='white', fontweight='bold', fontsize=11)
-    ax.set_ylabel('', color='white')
+        ax.bar_label(ax.containers[1], padding=8, color=text_color, fontweight='bold', fontsize=11)
+    ax.tick_params(colors=text_color, labelsize=12)
+    ax.bar_label(ax.containers[0], padding=8, color=text_color, fontweight='bold', fontsize=11)
+    ax.set_ylabel('', color=text_color)
     ax.get_xaxis().set_visible(False)
     sns.despine(left=True, bottom=True)
     fig.patch.set_alpha(0.0)
@@ -199,7 +205,7 @@ def opening_stats_graph(player, selection):
         }
         games_num = len(opening_stats)
 
-    white_palette = {"Win": "#f7f7f7", "Draw": "#c4c4c4", "Loss": "#b3b3b3"}
+    white_palette = {"Win": "#dfd3c3", "Draw": "#beb6aa", "Loss": "#888279"}
     black_palette = {"Win": "#333333", "Draw": "#242424", "Loss": "#1a1a1a"}
         
         
@@ -207,9 +213,9 @@ def opening_stats_graph(player, selection):
     sns.histplot(data=white_data, y="Move", weights="Percentage", hue="Result", multiple="stack", alpha=1, shrink=0.5, palette=white_palette, ax=ax)
     if selection == "Player":
         sns.histplot(data=black_data, y="Move", weights="Percentage", hue="Result", multiple="stack", alpha=1, shrink=0.5, palette=black_palette, ax=ax)
-    ax.tick_params(colors='white', labelsize=12)
-    ax.set_xlabel('Percentage (%)', color='white', fontsize=12)
-    ax.set_ylabel('Move', color='white', fontsize=12)
+    ax.tick_params(colors=text_color, labelsize=12)
+    ax.set_xlabel('Percentage (%)', color=text_color, fontsize=12)
+    ax.set_ylabel('Move', color=text_color, fontsize=12)
     ax.set_xlim(0, 100)
 
     sns.despine(left=True, bottom=True)

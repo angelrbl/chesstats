@@ -3,6 +3,7 @@ import general as general
 from Player import Player
 import graphs
 
+
 #Título
 st.write("# **Chesstats.**")
 st.write("###### The best data analysis engine to improve at chess")
@@ -41,3 +42,4 @@ with tab3:
     st.pyplot(graphs.results_graph(player, color="black"), transparent="True")
 
 st.bottom.link_button("Project", url="https://github.com/angelrbl/chesstats", type="secondary", icon="🐈", )
+graphs.check_text_color()

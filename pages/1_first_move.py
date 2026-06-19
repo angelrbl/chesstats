@@ -1,6 +1,10 @@
 import streamlit as st
 import graphs
+import general as general
+from Player import Player
 
+if "player" not in st.session_state:
+    st.session_state["player"] = Player("TensiKReyDama", general.pgn_file)
 player = st.session_state["player"]
 
 st.title("First move.")
@@ -30,8 +34,14 @@ with tab1:
     except:
         st.warning("Not enough data to show first move leading win rates.")
 
+    with st.expander("See explanation"):
+        st.write('''
+            The chart above shows the loss-rate, draw-rate and win-rate of
+            the specified games as white/black in order from left to right.
+        ''')
+
 with tab2:
     st.pyplot(graphs.first_moves_heatmap(player, selection=option_map[selection]))
 
-
 st.bottom.link_button("Project", url="https://github.com/angelrbl/chesstats", type="secondary", icon="🐈")
+graphs.check_text_color()
