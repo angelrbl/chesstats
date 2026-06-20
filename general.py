@@ -1,7 +1,29 @@
 import chess
 import chess.pgn
 from ChessGame import ChessGame
-from Player import Player
+import chessdotcom
+
+chessdotcom.Client.request_config["headers"]["User-Agent"] = ("ChesstatsApp"
+    "Contact me at angelramibla@gmail.com")
+
+def seek_chessdotcom_games(username, months):
+    try:
+        response = chessdotcom.get_player_game_archives(username.lower())
+        archive = response.json.get("archives", [])
+        pgn = ""
+        last_month_url = archive[-1]
+        last_month_url = last_month_url.split('/')
+
+        for i in range(months):
+            year = last_month_url[-2]
+            month = str(int(last_month_url[-1]) - i)
+            month_pgn = chessdotcom.get_player_games_by_month_pgn(username.lower(), year=year, month=month)
+            if month_pgn.text:
+                pgn += month_pgn.text + "\n\n"
+        return pgn
+    except Exception as e:
+        raise Exception(f"Error while obtaining data from Chess.com: {e}")
+
 
 def build_games_list(pgn):
     pgn.seek(0)
@@ -48,35 +70,4 @@ user = "TensiKReyDama"
 games = build_games_list(pgn_file)
 
 if __name__ == "__main__":
-    player = Player(user, pgn_file)
-    chess_games = build_games_list(pgn_file)
-
-    #PLAYER
-
-    player_move_matrix = player.get_first_moves_matrix()
-
-    for f in range(len(player_move_matrix)):
-        print(player_move_matrix[-(f+1)]) 
-        
-    player_first_moves = player.get_first_moves()
-    print(player_first_moves)
-
-    #GAMES
-
-    games_move_matrix = get_first_moves_matrix(chess_games)
-
-    for f in range(len(games_move_matrix)):
-        print(games_move_matrix[-(f+1)])
-
-    games_first_moves = get_first_moves(chess_games)
-    print(games_first_moves)
- 
-    player = Player(user, pgn_file)
-    print(player.get_first_capture(0))
-
-    chess_games = build_games_list(pgn_file)
-    print(chess_games[0].get_first_capture())
-
-    print(player.took(player.get_games()[0], 17))
-
-    print(player.get_opening_stats())
+    print(seek_chessdotcom_games("TensiKReyDama", months=3))

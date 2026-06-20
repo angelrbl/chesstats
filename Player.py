@@ -6,11 +6,11 @@ class Player:
     def __init__(self, usr, pgn):
         self.username = usr
         self.games = self.filter_games(pgn)
-        self.GAME_NUM = len(self.games)
+        self.GAME_NUM = len(self.games)    
 
     def filter_games(self, pgn):
-        chess_games = []
         pgn.seek(0)
+        chess_games = []
         file_game = chess.pgn.read_game(pgn) 
         while file_game is not None:
             game = ChessGame(file_game)
