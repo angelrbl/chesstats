@@ -18,6 +18,9 @@ def seek_chessdotcom_games(username, months):
         for i in range(months):
             year = last_month_url[-2]
             month = str(int(last_month_url[-1]) - i)
+            if int(month) <= 0:
+                month = str(int(month) + 12)
+                year = str(int(year) - 1)
             month_pgn = chessdotcom.get_player_games_by_month_pgn(username.lower(), year=year, month=month)
             if month_pgn.text:
                 pgn += month_pgn.text + "\n\n"
