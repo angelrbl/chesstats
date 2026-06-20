@@ -10,13 +10,14 @@ text_color = "white" if st.context.theme.type == "dark" else "black"
 if "pgn_file" not in st.session_state:
         st.session_state["pgn_file"] = general.pgn_file
 pgn_file = st.session_state["pgn_file"]
-games = general.build_games_list(pgn_file)
+if "games" not in st.session_state:
+        st.session_state["games"] = general.build_games_list(pgn_file)
 
 def check_text_color():
     text_color = "white" if st.context.theme.type == "dark" else "black"
 
 def first_moves_heatmap(player, selection):
-    matriz_np = np.array(player.get_first_moves_matrix() if selection == "Player" else general.get_first_moves_matrix(games))
+    matriz_np = np.array(player.get_first_moves_matrix() if selection == "Player" else general.get_first_moves_matrix(st.session_state["games"]))
     matriz_np = np.flipud(matriz_np)
 
     cols = ["a", "b", "c", "d", "e", "f", "g", "h"]
@@ -77,7 +78,7 @@ def first_move_graph(player, selection):
         }
         games_num = len(first_move_dict[0]) + len(first_move_dict[1])
     else:
-        first_move_dict = general.get_first_moves(games)
+        first_move_dict = general.get_first_moves(st.session_state["games"])
         if not first_move_dict:
             raise Exception("Not enough data to show")
         first_move_white_data = {
@@ -173,7 +174,7 @@ def opening_stats_graph(player, selection):
 
         games_num = len(opening_stats[0]) + len(opening_stats[1])
     else:
-        opening_stats = general.get_opening_stats(games)
+        opening_stats = general.get_opening_stats(st.session_state["games"])
         if not opening_stats:
             raise Exception("Not enough data to show")
         #WHITE
