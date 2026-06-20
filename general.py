@@ -2,6 +2,7 @@ import chess
 import chess.pgn
 from ChessGame import ChessGame
 import chessdotcom
+import streamlit as st
 
 chessdotcom.Client.request_config["headers"]["User-Agent"] = ("ChesstatsApp"
     "Contact me at angelramibla@gmail.com")
