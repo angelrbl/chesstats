@@ -43,12 +43,12 @@ st.write("Pick where do you want to get your data from: ")
 tab1, tab2 = st.tabs(["PGN File", "Chess.com"])
 with tab1:
     #Usuario
-    pgn_file = st.session_state["pgn_file"]  
+    pgn_file = general.pgn_file  
     uploaded_file = st.file_uploader(label="PGN file", type=".pgn", max_upload_size=10, accept_multiple_files=False, on_change=default_pgn_file)
     with st.spinner(f"Downloading games from uploaded PGN file... (this may take a few seconds)"):
         if uploaded_file:
             pgn_file = StringIO(uploaded_file.getvalue().decode("utf-8"))            
-    username = st.selectbox(label="User", placeholder="Type a username", options=general.get_players_list(pgn_file))
+    username = st.selectbox(label="User", placeholder="Type a username", options=general.get_players_list(pgn_file), index=None)
     st.button("Retrieve data from PGN file", on_click=data_from_pgn, kwargs={"username": username, "pgn_file": pgn_file}, width="stretch", key="pgn_button")
 
 with tab2:
