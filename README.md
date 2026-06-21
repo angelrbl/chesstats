@@ -25,8 +25,9 @@ Chesstats is a data analysis tool that helps you visualize and understand differ
 
 - Python 3.12
 - Streamlit (front-end)
-- Seaborn and Matplotlib (graphs)
+- Seaborn, Matplotlib and Numpy (graphs)
 - python-chess (PGN processing engine)
+- chess.com (access data from Chess.com)
 
 ---
 
@@ -80,4 +81,4 @@ streamlit run dashboard.py
 
 ## 🧑💻 Credits
 
-@angelrbl: Project designed with analitic purposes and data science learning applied to chess.
+@angelrbl: Project designed with analytic purposes and data science learning applied to chess.
