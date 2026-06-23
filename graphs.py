@@ -58,6 +58,14 @@ def results_graph(player, color):
 
     fig, ax = plt.subplots(figsize=(8,6))
     sns.barplot(x='Results',y='Games', data=chess_results_data, color=color, ax=ax)
+    for container in ax.containers:
+            ax.bar_label(
+                container, 
+                padding=4, 
+                color=text_color, 
+                fontweight='bold', 
+                fontsize=11
+            )
     sns.despine(left=True, bottom=True)
     ax.tick_params(colors=text_color, labelsize=12)
     ax.set_xlabel('', color=text_color)
