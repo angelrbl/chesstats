@@ -22,7 +22,7 @@ def data_from_pgn(username, pgn_file):
     st.session_state["games"] = general.build_games_list(pgn_file)
 
 def data_from_chesscom(username, months):
-    with st.spinner(f"Downloading {username} last {months} games from Chess.com... (this may take a few seconds)"):
+    with st.spinner(f"Downloading {username} last {months} months' games from Chess.com... (this may take a few seconds)"):
         try:
             st.session_state["username"] = username
             st.session_state["pgn_file"] = StringIO(general.seek_chessdotcom_games(st.session_state["username"], months=months))
