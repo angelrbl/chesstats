@@ -67,6 +67,64 @@ def results_graph(player, color):
     ax.patch.set_alpha(0.0)
     return fig
 
+def compare_results_graphs(player, opponent, selection, color):
+    if selection == "General":
+        player_username = player.get_username()
+        opponent_username = opponent.get_username()
+        if color == "white":
+            player_wins = player.get_win_count(color="white")
+            player_draws = player.get_draw_count(color="white")
+            player_losses = player.get_loss_count(color="white")
+            opponent_wins = opponent.get_win_count(color="white")
+            opponent_draws = opponent.get_draw_count(color="white")
+            opponent_losses = opponent.get_loss_count(color="white")
+            palette = {player_username: "#dfd3c3", opponent_username: "#a8967f"}
+        elif color == "black":
+            player_wins = player.get_win_count(color="black")
+            player_draws = player.get_draw_count(color="black")
+            player_losses = player.get_loss_count(color="black")
+            opponent_wins = opponent.get_win_count(color="black")
+            opponent_draws = opponent.get_draw_count(color="black")
+            opponent_losses = opponent.get_loss_count(color="black")
+            palette = {player_username: "#373737", opponent_username: "#2C2B29"}
+        else:
+            player_wins = player.get_win_count(color="")
+            player_draws = player.get_draw_count(color="")
+            player_losses = player.get_loss_count(color="")
+            opponent_wins = opponent.get_win_count(color="")
+            opponent_draws = opponent.get_draw_count(color="")
+            opponent_losses = opponent.get_loss_count(color="")
+            palette = {player_username: "#dfd3c3", opponent_username: "#373737"}
+        chess_results_data = {
+            "Results": ["Win", "Losses", "Draw", "Win", "Losses", "Draw"],
+            "Games": [player_wins, player_losses, player_draws, opponent_wins, opponent_losses, opponent_draws],
+            "Player": [player_username, player_username, player_username, opponent_username, opponent_username, opponent_username]
+        }
+        fig, ax = plt.subplots(figsize=(8, 5))
+        sns.barplot(x="Results", y="Games", hue="Player", data=chess_results_data, palette=palette, ax=ax)
+
+        for container in ax.containers:
+            ax.bar_label(
+                container, 
+                padding=4, 
+                color=text_color, 
+                fontweight='bold', 
+                fontsize=11
+            )
+        
+        ax.tick_params(colors=text_color, labelsize=12)
+        ax.set_xlabel('', color=text_color)
+        ax.set_ylabel('Num of games', color=text_color)
+        legend = ax.get_legend()
+        if legend:
+            legend.remove()
+        sns.despine(left=True, bottom=True)
+        fig.patch.set_alpha(0.0)
+        ax.patch.set_alpha(0.0)
+        fig.tight_layout()
+        return fig
+
+
 def first_move_graph(player, selection):
     if selection == "Player":
         first_move_dict = player.get_first_moves()
@@ -115,7 +173,6 @@ def first_move_graph(player, selection):
     fig.patch.set_alpha(0.0)
     ax.patch.set_alpha(0.0)
     return fig
-
 
 def opening_stats_graph(player, selection):
     if selection == "Player":
@@ -246,6 +303,8 @@ def opening_stats_graph(player, selection):
         legend.remove()
             
     return fig
+
+
 
 if __name__ == "__main__":
     pgn_file = open("chess_games.pgn", encoding="utf-8")

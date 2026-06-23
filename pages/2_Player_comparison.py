@@ -1,6 +1,7 @@
 import streamlit as st
 from Player import Player
 import general as general
+import graphs
 
 if "player" not in st.session_state:
     st.session_state["player"] = Player("TensiKReyDama", general.pgn_file)
@@ -19,5 +20,18 @@ except:
     raise Exception("Error: No player selected.")
 
 if player_to_compare:
+    option_map = {0: "Match-up", 1: "General"}
+    selection = st.segmented_control("", options=option_map.keys(), format_func=lambda option: option_map[option], selection_mode="single", required=True, default=0)
     opponent = Player(player_to_compare, pgn_file)
-    st.write(f"Comparing games between **{player.get_username()}** and **{opponent.get_username()}**")
+    st.write(f"Comparing {"games" if option_map[selection] == "General" else "match-ups"} between **{player.get_username()}** and **{opponent.get_username()}**")
+    tab1, tab2, tab3 = st.tabs(["General", "White", "Black"])
+
+    with tab1:
+        st.pyplot(graphs.compare_results_graphs(player, color="", opponent=opponent, selection=option_map[selection]), transparent="True")
+    with tab2:
+        st.pyplot(graphs.compare_results_graphs(player, color="white", opponent=opponent, selection=option_map[selection]), transparent="True")
+    with tab3:
+        st.pyplot(graphs.compare_results_graphs(player, color="black", opponent=opponent, selection=option_map[selection]), transparent="True")
+
+st.bottom.link_button("Project", url="https://github.com/angelrbl/chesstats", type="secondary", icon=":material/deployed_code:")
+graphs.text_color = graphs.check_text_color()
