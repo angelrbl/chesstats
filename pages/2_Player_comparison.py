@@ -20,10 +20,10 @@ except:
     raise Exception("Error: No player selected.")
 
 if player_to_compare:
-    option_map = {0: "Match-up", 1: "General"}
+    option_map = {0: "Matches", 1: "General"}
     selection = st.segmented_control("", options=option_map.keys(), format_func=lambda option: option_map[option], selection_mode="single", required=True, default=0)
     opponent = Player(player_to_compare, pgn_file)
-    st.write(f"Comparing {"games" if option_map[selection] == "General" else "match-ups"} between **{player.get_username()}** and **{opponent.get_username()}**")
+    st.write(f"Comparing {"games" if option_map[selection] == "General" else "matches"} between **{player.get_username()}** and **{opponent.get_username()}**")
     tab1, tab2, tab3 = st.tabs(["General", "White", "Black"])
 
     with tab1:

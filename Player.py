@@ -112,7 +112,7 @@ class Player:
         else:
             return False
 
-    def get_win_count(self, color, games):
+    def get_win_count(self, color=None, games=None):
         if not games:
             games = self.games
         white_wins = 0
@@ -130,7 +130,7 @@ class Player:
         else:
             return white_wins + black_wins
     
-    def get_draw_count(self, color, games):
+    def get_draw_count(self, color=None, games=None):
         if not games:
             games = self.games
         white_draws = 0
@@ -148,7 +148,7 @@ class Player:
         else:
             return white_draws + black_draws
         
-    def get_loss_count(self, color, games):
+    def get_loss_count(self, color=None, games=None):
         if not games:
             games = self.games
         white_losses = 0
@@ -177,7 +177,7 @@ class Player:
     def get_matches(self, opponent):
         matches = []
         for game in self.games:
-            if(game.get_white() == opponent or game.get_black() == opponent):
+            if(game.get_white() == opponent.get_username() or game.get_black() == opponent.get_username()):
                 matches.append(game)
         return matches
     
