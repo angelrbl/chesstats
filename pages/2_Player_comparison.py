@@ -55,3 +55,7 @@ if player_to_compare:
 
 st.bottom.link_button("Project", url="https://github.com/angelrbl/chesstats", type="secondary", icon=":material/deployed_code:")
 graphs.text_color = graphs.check_text_color()
+
+#IDEA: DESCARGAR EL MISMO NUMERO DE MESES DE JUEGO DEL OTRO JUGADOR PARA COMPARAR LAS GENERAL STATS DE UNA FORMA MAS JUSTA:
+# estudiar si el pgn proviene de chess.com con una variable de estado,
+# si es así, generar un pgn mediante seekchesscomgames del mismo numero de meses

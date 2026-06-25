@@ -8,6 +8,7 @@ Chesstats is a data analysis tool that helps you visualize and understand differ
 
 ![Chesstat's main dashboard](images/dashboard.jpg)
 ![First move page](images/first_move.jpg)
+![Player comparison page](images/player_comparison.jpg)
 
 ---
 
@@ -17,6 +18,7 @@ Chesstats is a data analysis tool that helps you visualize and understand differ
 - Dynamic selection of data (General view vs. Specific player)
 - First move frequency analysis
 - Performance graphs and win rate of openings (with stacked percentages)
+- General and direct match comparison between players' stats.
 - Clean interface with light and dark mode support
 
 ---
@@ -55,6 +57,8 @@ That's it, now you have installed chesstats.
 ```
 streamlit run dashboard.py
 ```
+<br></br>
+> **Note**:   You can also use Chesstats from its webpage: [chesstats.stramlit.app](chesstats.streamlit.app)
 
 ---
 
@@ -63,13 +67,14 @@ streamlit run dashboard.py
 ```chesstats/
 ├── pages/
 │ └── 1_First_move.py
+│ └── 2_Player_comparison.py
 ├── data/
 │ └── chess-games.pgn
 ├── images/
 │ └── dashboard.jpg
 │ └── first_move.jpg
 ├── graphs.py        # Advanced graph generation using Seaborn
-├── Dashboard.py     # Entry point of Streamlit front-end
+├── Chesstats.py     # Entry point of Streamlit front-end
 ├── ChessGame.py     # Chess Game logic
 ├── Player.py        # Player logic
 ├── general.py       # PGN exctractin logic and general stats
