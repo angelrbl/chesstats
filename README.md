@@ -73,6 +73,7 @@ streamlit run dashboard.py
 ├── images/
 │ └── dashboard.jpg
 │ └── first_move.jpg
+│ └── player_comparison.jpg
 ├── graphs.py        # Advanced graph generation using Seaborn
 ├── Chesstats.py     # Entry point of Streamlit front-end
 ├── ChessGame.py     # Chess Game logic
@@ -86,4 +87,4 @@ streamlit run dashboard.py
 
 ## 🧑💻 Credits
 
-@angelrbl: Project designed with analytic purposes and data science learning applied to chess.
+@angelrbl: *A data science and analytics project designed to learn and explore chess performance and patterns.*
