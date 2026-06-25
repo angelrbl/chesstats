@@ -69,13 +69,13 @@ def get_opening_stats(games):
         opening_stats[first_move][result] += 1
     return opening_stats
 
-def get_players_list(pgn):
+def get_player_list(pgn):
     games = build_games_list(pgn)
     player_list = []
     for game in games:
         player_list.append(game.get_white())
         player_list.append(game.get_black())
-    player_list = set(player_list)
+    player_list = list(set(player_list))
     return player_list    
 
 pgn_file = open("chess_games.pgn", encoding="utf-8")

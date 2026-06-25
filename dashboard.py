@@ -7,7 +7,7 @@ from io import StringIO
 #INICIALIZAMOS
 
 if "username" not in st.session_state:
-        st.session_state["username"] = "TensiKReyDama"
+        st.session_state["username"] = None
 if "pgn_file" not in st.session_state:
         st.session_state["pgn_file"] = general.pgn_file
 if "player" not in st.session_state:
@@ -48,14 +48,15 @@ with tab1:
     with st.spinner(f"Downloading games from uploaded PGN file... (this may take a few seconds)"):
         if uploaded_file:
             pgn_file = StringIO(uploaded_file.getvalue().decode("utf-8"))            
-    username = st.selectbox(label="User", placeholder="Type a username", options=general.get_players_list(pgn_file), index=None)
-    st.button("Retrieve data from PGN file", on_click=data_from_pgn, kwargs={"username": username, "pgn_file": pgn_file}, width="stretch", key="pgn_button")
+    player_list = general.get_player_list(pgn_file)
+    pgn_user = st.selectbox(label="User", placeholder="Type a username", options=player_list, index=(None if not st.session_state["username"] in player_list else player_list.index(st.session_state["username"])))
+    st.button("Retrieve data from PGN file", on_click=data_from_pgn, kwargs={"username": pgn_user, "pgn_file": pgn_file}, width="stretch", key="pgn_button")
 
 with tab2:
     col1,col2 = st.columns(2) 
-    username = col1.text_input(label="User", value=st.session_state["username"], placeholder="Type a Chess.com username")
+    chesscom_user = col1.text_input(label="User", value=st.session_state["username"], placeholder="Type a Chess.com username")
     months = col2.number_input("Months", placeholder="Type the number of months back to retrieve data from", icon=":material/calendar_month:", min_value=1, value=3)
-    st.button("Retrieve data from Chess.com", on_click=data_from_chesscom, kwargs={"username": username, "months": months}, width="stretch", key="chesscom_button")
+    st.button("Retrieve data from Chess.com", on_click=data_from_chesscom, kwargs={"username": chesscom_user, "months": months}, width="stretch", key="chesscom_button")
 
 player = st.session_state["player"]
 

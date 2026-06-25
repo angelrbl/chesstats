@@ -17,7 +17,7 @@ Chesstats is a data analysis tool that helps you visualize and understand differ
 - Dynamic selection of data (General view vs. Specific player)
 - First move frequency analysis
 - Performance graphs and win rate of openings (with stacked percentages)
-- Clean interface with dark mode support
+- Clean interface with light and dark mode support
 
 ---
 
