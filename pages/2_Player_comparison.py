@@ -21,11 +21,11 @@ except:
     player_to_compare = None
 
 if player_to_compare:
-    opponent = Player(player_to_compare, pgn_file)
-    player_username = player.get_username()
-    opponent_username = opponent.get_username()
-
-
+    with st.spinner("Comparing games, this may take a few seconds:"):
+        opponent = Player(player_to_compare, pgn_file)
+        player_username = player.get_username()
+        opponent_username = opponent.get_username()
+        matches = player.get_matches(opponent)
 
     option_map = {0: "Matches", 1: "General"}
     selection = st.segmented_control("", options=option_map.keys(), format_func=lambda option: option_map[option], selection_mode="single", required=True, default=0)
@@ -34,7 +34,6 @@ if player_to_compare:
     st.write("#### Performace comparison:")
     st.write(f"##### {option_map[selection]} win-rate: ")
     col1, col2 = st.columns(2)
-    matches = player.get_matches(opponent)
     winning_rates = [{"Matches": player.get_winning_rate(games=matches), "General": player.get_winning_rate()}, {"Matches": opponent.get_winning_rate(games=matches), "General": opponent.get_winning_rate()}]
     col1.metric(label=player_username, value=winning_rates[0][option_map[selection]])
     col2.metric(label=opponent_username, value=winning_rates[1][option_map[selection]])

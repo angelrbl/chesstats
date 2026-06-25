@@ -25,7 +25,8 @@ def data_from_chesscom(username, months):
     with st.spinner(f"Downloading {username} last {months} months' games from Chess.com... (this may take a few seconds)"):
         try:
             st.session_state["username"] = username
-            st.session_state["pgn_file"] = StringIO(general.seek_chessdotcom_games(st.session_state["username"], months=months))
+            print(username, months)
+            st.session_state["pgn_file"] = StringIO(general.seek_chessdotcom_games(username=username, months=months))
             st.session_state["player"] = Player(username, st.session_state["pgn_file"])
             st.session_state["games"] = general.build_games_list(st.session_state["pgn_file"])
         except Exception as e:
