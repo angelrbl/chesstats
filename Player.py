@@ -31,10 +31,15 @@ class Player:
         return set(rival_list)
 
 
-    def get_winning_rate(self):
-        if self.GAME_NUM == 0:
-            return 0
-        return f"{(self.get_win_count(color="") / self.GAME_NUM) * 100:.1f} %"
+    def get_winning_rate(self, games=None):
+        if not games:
+            games = self.games
+            game_num = self.GAME_NUM
+        else:
+            game_num = len(games)
+        if game_num == 0:
+            return "0 %"
+        return f"{(self.get_win_count(color="", games=games) / game_num) * 100:.1f} %"
 
     def get_first_move(self, game, notation):
         board = game.get_board()
