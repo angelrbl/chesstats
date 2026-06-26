@@ -3,6 +3,8 @@ import graphs
 import general as general
 from Player import Player
 
+graphs.text_color = graphs.check_text_color()
+
 if "player" not in st.session_state:
     st.session_state["player"] = Player("TensiKReyDama", general.pgn_file)
 player = st.session_state["player"]
@@ -49,4 +51,3 @@ if player_selected:
         st.pyplot(graphs.first_moves_heatmap(player, selection=option_map[selection]))
 
 st.bottom.link_button("Project", url="https://github.com/angelrbl/chesstats", type="secondary", icon=":material/deployed_code:")
-graphs.text_color = graphs.check_text_color()

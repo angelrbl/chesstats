@@ -4,6 +4,9 @@ from Player import Player
 import graphs
 from io import StringIO
 
+st.set_page_config(page_title="Chesstats", page_icon=":material/chess_rook:")
+graphs.text_color = graphs.check_text_color()
+
 #INICIALIZAMOS
 
 if "username" not in st.session_state:
@@ -83,4 +86,3 @@ if player:
         st.pyplot(graphs.results_graph(player, color="black"), transparent="True")
 
 st.bottom.link_button("Project", url="https://github.com/angelrbl/chesstats", type="secondary", icon=":material/deployed_code:")
-graphs.text_color = graphs.check_text_color()
