@@ -1,3 +1,4 @@
+from io import StringIO
 import streamlit as st
 from Player import Player
 import general as general
@@ -11,6 +12,9 @@ player = st.session_state["player"]
 if "pgn_file" not in st.session_state:
         st.session_state["pgn_file"] = general.pgn_file
 pgn_file = st.session_state["pgn_file"]
+if "months" not in st.session_state:
+    st.session_state["months"] = None
+months = st.session_state["months"]
 
 st.write("# Player comparison")
 st.write("###### Compare different stats between players.")
@@ -23,8 +27,12 @@ except:
     player_to_compare = None
 
 if player_to_compare:
-    with st.spinner("Comparing games, this may take a few seconds:"):
-        opponent = Player(player_to_compare, pgn_file)
+    with st.spinner("Comparing games, this may take a few seconds..."):
+        if months:
+            opponent_pgn = StringIO(general.seek_chessdotcom_games(username=player_to_compare, months=months))
+        else:
+            opponent_pgn = pgn_file
+        opponent = Player(player_to_compare, opponent_pgn)
         player_username = player.get_username()
         opponent_username = opponent.get_username()
         matches = player.get_matches(opponent)

@@ -17,6 +17,8 @@ if "player" not in st.session_state:
     st.session_state["player"] = None
 if "games" not in st.session_state:
     st.session_state["games"] = general.build_games_list(st.session_state["pgn_file"])
+if "months" not in st.session_state:
+    st.session_state["months"] = None
 
 def data_from_pgn(username, pgn_file):
     st.session_state["username"] = username
@@ -32,6 +34,7 @@ def data_from_chesscom(username, months):
             st.session_state["pgn_file"] = StringIO(general.seek_chessdotcom_games(username=username, months=months))
             st.session_state["player"] = Player(username, st.session_state["pgn_file"])
             st.session_state["games"] = general.build_games_list(st.session_state["pgn_file"])
+            st.session_state["months"] = months
         except Exception as e:
             st.error(f"Player's data not found on Chess.com: {e}")
 
